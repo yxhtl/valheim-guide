@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>农场种植与收益指南 | Valheim 英灵神殿攻略</title>
+<meta name="description" content="Valheim农场攻略：胡萝卜、芜菁、洋葱、大麦、亚麻全作物种植表，含交互式收益计算器，计算地块利润与日均收入。种植条件与种子来源详解。">
+<meta name="keywords" content="Valheim农场,英灵神殿种植,胡萝卜,芜菁,洋葱,大麦,亚麻,收益计算器">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Valheim 农场种植与收益指南","inLanguage":"zh-CN","about":"Valheim 全作物种植表与交互式收益计算器","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" class="active" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Farming">农场种植</span></div>
+    <span class="eyebrow" data-en="Farming">农场种植</span>
+    <h2 class="title" data-en="Crop Planting &amp; Profit Guide">作物种植与收益指南 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="Full crop planting guide: seed sources, growth conditions, harvest yields and profit analysis, with an interactive profit calculator. Source: valheim.fandom.com/wiki/Farming">全作物种植指南：种子来源、生长条件、收获产出与利润分析，含交互式收益计算器。数据来源：valheim.fandom.com/wiki/Farming</p>
+
+    <div class="farm-table">
+      <table>
+        <thead><tr>
+          <th data-en="Crop">作物</th>
+          <th data-en="Biome">生物群落</th>
+          <th data-en="Seed Source">种子来源</th>
+          <th data-en="Harvest">收获产出</th>
+          <th data-en="Grow Days">生长天数</th>
+          <th data-en="Use">用途</th>
+          <th data-en="Notes">备注</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><b data-en="Carrot">胡萝卜</b></td>
+            <td><span class="biome-tag b-meadow" data-en="Meadows">青草地</span></td>
+            <td data-en="Pick carrot seeds in Black Forest">黑森林拾取胡萝卜种子</td>
+            <td data-en="1 Carrot + 1-3 seeds">1胡萝卜 + 1-3种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Eat / Carrot Soup / Tame boars">食用/胡萝卜汤/驯猪</td>
+            <td data-en="Early staple crop, plant once and sustain">前期基础作物，种一次可持续</td>
+          </tr>
+          <tr>
+            <td><b data-en="Turnip">芜菁</b></td>
+            <td><span class="biome-tag b-swamp" data-en="Swamp">沼泽</span></td>
+            <td data-en="Pick turnip seeds in Swamp">沼泽拾取芜菁种子</td>
+            <td data-en="1 Turnip + 1-3 seeds">1芜菁 + 1-3种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Eat / Turnip Stew">食用/芜菁炖菜</td>
+            <td data-en="Must plant in Swamp, not Meadows">需在沼泽种植，青草地不行</td>
+          </tr>
+          <tr>
+            <td><b data-en="Onion">洋葱</b></td>
+            <td><span class="biome-tag b-mountain" data-en="Mountain">雪山</span></td>
+            <td data-en="Pick onion seeds in Mountain">雪山拾取洋葱种子</td>
+            <td data-en="1 Onion + 1-3 seeds">1洋葱 + 1-3种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Eat / Onion Soup">食用/洋葱汤</td>
+            <td data-en="Must plant in Mountain, needs frost resistance">需在雪山种植，需抗寒</td>
+          </tr>
+          <tr>
+            <td><b data-en="Barley">大麦</b></td>
+            <td><span class="biome-tag b-plains" data-en="Plains">平原</span></td>
+            <td data-en="Pick near Fuling villages in Plains">平原丑地精村附近拾取</td>
+            <td data-en="2 Barley + 1-2 seeds">2大麦 + 1-2种子</td>
+            <td data-en="~4-5 days">约4-5天</td>
+            <td data-en="Grind &gt; Barley Flour &gt; Black Bread">磨粉&gt;黑面包</td>
+            <td data-en="Needs windmill to grind, high-tier food ingredient">需风车磨粉，高级食物原料</td>
+          </tr>
+          <tr>
+            <td><b data-en="Flax">亚麻</b></td>
+            <td><span class="biome-tag b-plains" data-en="Plains">平原</span></td>
+            <td data-en="Pick near Fuling villages in Plains">平原丑地精村附近拾取</td>
+            <td data-en="2 Flax + 1-2 seeds">2亚麻 + 1-2种子</td>
+            <td data-en="~4-5 days">约4-5天</td>
+            <td data-en="Spin &gt; Linen Thread &gt; Blackmetal Cape etc.">纺线&gt;黑金属披风等</td>
+            <td data-en="Needs spinning wheel, high-tier armor material">需纺车纺线，高级防具材料</td>
+          </tr>
+          <tr>
+            <td><b data-en="Seed Carrot">种子胡萝卜</b></td>
+            <td><span class="biome-tag b-meadow" data-en="Meadows">青草地</span></td>
+            <td data-en="Obtained from farm planting">栽培场种植获得</td>
+            <td data-en="1 Seed Carrot">1种子胡萝卜</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Tame goats">驯服山羊</td>
+            <td data-en="Specifically for taming animals">专门用于驯服动物</td>
+          </tr>
+          <tr>
+            <td><b data-en="Seed Turnip">种子芜菁</b></td>
+            <td><span class="biome-tag b-swamp" data-en="Swamp">沼泽</span></td>
+            <td data-en="Obtained from farm planting">栽培场种植获得</td>
+            <td data-en="1 Seed Turnip">1种子芜菁</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Tame wolves">驯服狼</td>
+            <td data-en="Specifically for taming animals">专门用于驯服动物</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===== FARM CALCULATOR ===== -->
+    <div class="calc-box">
+      <h4 style="color:var(--heading);margin-bottom:16px" data-en="Farm Profit Calculator">农场收益计算器</h4>
+      <div class="calc-row">
+        <label data-en="Crop">选择作物</label>
+        <select id="farmCrop">
+          <option value="0" data-en="Carrot (Meadows)">胡萝卜（青草地）</option>
+          <option value="1" data-en="Turnip (Swamp)">芜菁（沼泽）</option>
+          <option value="2" data-en="Onion (Mountain)">洋葱（雪山）</option>
+          <option value="3" data-en="Barley (Plains)">大麦（平原）</option>
+          <option value="4" data-en="Flax (Plains)">亚麻（平原）</option>
+        </select>
+      </div>
+      <div class="calc-row">
+        <label data-en="Plots">地块数</label>
+        <input type="number" id="farmPlots" value="20" min="1" max="999">
+        <label style="min-width:auto" data-en="Rounds">收获轮次</label>
+        <input type="number" id="farmRounds" value="3" min="1" max="99">
+      </div>
+      <div class="calc-result" id="farmResult"></div>
+    </div>
+
+    <p style="margin-top:16px;font-size:14px;color:var(--ink-soft)" data-en="<b>Planting Tips:</b> Each crop can only be planted in its corresponding biome (Barley/Flax only in Plains, Carrot in Meadows, etc.). Till each tile with a cultivator, plant 1 seed, and when fully grown, harvest 1 crop + 1-3 seeds for a self-sustaining seed cycle. Late game, build large automated farms with windmills (grind barley flour) and spinning wheels (spin linen thread) for pipeline production.">
+      <b>种植提示</b>：每种作物只能在对应生物群落种植（大麦/亚麻只能在平原，胡萝卜在青草地等）。
+      每块田地用耕耙翻土后播1颗种子，生长完成后收获1作物+1~3种子，实现种子自循环。
+      后期建议建大型自动化农场，配合风车（磨大麦粉）和纺车（纺亚麻线）实现流水线生产。
+    </p>
+
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Planting Basics">种植基础</h4><ul>
+        <li data-en="Till soil with cultivator (within workbench range)">用耕耙翻土（需工作台范围内）</li>
+        <li data-en="Plant 1 seed per tile">每格播1颗种子</li>
+        <li data-en="No watering needed — auto-grows">不需要浇水，自动生长</li>
+        <li data-en="Cannot be sped up during growth">生长期间无法加速</li>
+        <li data-en="Harvest yields 1 crop + 1-3 seeds">收获得1作物+1-3种子</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Food Processing">食物加工</h4><ul>
+        <li data-en="Carrot + Mushroom &gt; Carrot Soup">胡萝卜+蘑菇&gt;胡萝卜汤</li>
+        <li data-en="Turnip + Raw Meat &gt; Turnip Stew">芜菁+生肉&gt;芜菁炖菜</li>
+        <li data-en="Barley &gt; Windmill &gt; Flour &gt; Black Bread">大麦&gt;风车&gt;大麦粉&gt;黑面包</li>
+        <li data-en="Processed food heals more">加工后食物回血更高</li>
+        <li data-en="3 food types can stack effects">3种食物可叠加效果</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Taming Animals">驯服动物</h4><ul>
+        <li data-en="Boar &gt; Feed Carrot (Meadows)">野猪&gt;喂胡萝卜（青草地）</li>
+        <li data-en="Wolf &gt; Feed Raw Meat (Mountain)">狼&gt;喂生肉（雪山）</li>
+        <li data-en="Lox &gt; Feed Seed Carrot">山羊&gt;喂种子胡萝卜</li>
+        <li data-en="Tamed animals can breed (need 2)">驯服后可繁殖（需2只）</li>
+        <li data-en="Produces hide/meat etc.">产出皮/肉等材料</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Late-Game Automation">后期自动化</h4><ul>
+        <li data-en="Windmill: Barley &gt; Barley Flour">风车：大麦&gt;大麦粉</li>
+        <li data-en="Spinning Wheel: Flax &gt; Linen Thread">纺车：亚麻&gt;亚麻线</li>
+        <li data-en="Cauldron: Craft high-tier food">大锅：合成高级食物</li>
+        <li data-en="Fermenter: Brew mead">发酵桶：制作蜜酒</li>
+        <li data-en="Build in workshop area for management">建在工坊区集中管理</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script>
+/* Crop data for calculator */
+const crops=[
+  {name:"胡萝卜",nameEn:"Carrot",days:3,yield:2,seedCost:1,use:"食用/胡萝卜汤",useEn:"Eat / Carrot Soup"},
+  {name:"芜菁",nameEn:"Turnip",days:3,yield:2,seedCost:1,use:"食用/芜菁炖菜",useEn:"Eat / Turnip Stew"},
+  {name:"洋葱",nameEn:"Onion",days:3,yield:2,seedCost:1,use:"食用/洋葱汤",useEn:"Eat / Onion Soup"},
+  {name:"大麦",nameEn:"Barley",days:5,yield:2,seedCost:1,use:"磨粉&gt;黑面包",useEn:"Grind &gt; Black Bread"},
+  {name:"亚麻",nameEn:"Flax",days:5,yield:2,seedCost:1,use:"纺线&gt;防具",useEn:"Spin &gt; Armor"},
+];
+function calcFarm(){
+  const ci=parseInt(document.getElementById("farmCrop").value);
+  const plots=parseInt(document.getElementById("farmPlots").value)||0;
+  const rounds=parseInt(document.getElementById("farmRounds").value)||0;
+  const c=crops[ci];
+  const isEn=document.documentElement.lang==="en";
+  const cname=isEn?c.nameEn:c.name;
+  const cuse=isEn?c.useEn:c.use;
+  const totalHarvest=plots*c.yield*rounds;
+  const totalSeeds=plots*rounds;
+  const seedReturn=plots*2*rounds;
+  const netSeeds=seedReturn-totalSeeds;
+  const totalDays=c.days*rounds;
+  const perDay=(totalHarvest/totalDays).toFixed(1);
+  const L={
+    crop:isEn?"Crop":"作物",
+    plotsRounds:isEn?"Plots × Rounds":"地块 × 轮次",
+    totalHarvest:isEn?"Total Harvest":"总收获量",
+    seedCost:isEn?"Seeds Used":"种子消耗",
+    seedReturn:isEn?"Seed Return (est.)":"种子回收（约）",
+    seedNet:isEn?"Seed Net Gain":"种子净增",
+    totalDays:isEn?"Total Grow Days":"总生长天数",
+    perDay:isEn?"Daily Output":"日均产出",
+    use:isEn?"Use":"用途",
+    units:isEn?"pcs":"个",
+    days:isEn?"days":"天",
+    perDayUnit:isEn?"pcs/day":"个/天",
+  };
+  document.getElementById("farmResult").innerHTML=`
+    <div class="rline"><span>${L.crop}</span><b>${cname}</b></div>
+    <div class="rline"><span>${L.plotsRounds}</span><b>${plots} × ${rounds}</b></div>
+    <div class="rline" style="border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:6px"><span>${L.totalHarvest}</span><b class="big">${totalHarvest} ${L.units}</b></div>
+    <div class="mat-line"><span class="mat-name">${L.seedCost}</span><span class="mat-qty">${totalSeeds}</span></div>
+    <div class="mat-line"><span class="mat-name">${L.seedReturn}</span><span class="mat-qty">${seedReturn}</span></div>
+    <div class="mat-line"><span class="mat-name">${L.seedNet}</span><span class="mat-qty ${netSeeds>=0?'pos':'neg'}" style="${netSeeds>=0?'color:#2e7d32':'color:var(--blood)'}">${netSeeds>=0?"+":""}${netSeeds}</span></div>
+    <div class="mat-line"><span class="mat-name">${L.totalDays}</span><span class="mat-qty">${totalDays} ${L.days}</span></div>
+    <div class="mat-line"><span class="mat-name">${L.perDay}</span><span class="mat-qty">${perDay} ${L.perDayUnit}</span></div>
+    <div class="mat-line"><span class="mat-name">${L.use}</span><span class="mat-qty" style="font-size:13px;font-weight:400;color:var(--ink-soft)">${cuse}</span></div>
+  `;
+}
+document.getElementById("farmCrop").addEventListener("change",calcFarm);
+document.getElementById("farmPlots").addEventListener("input",calcFarm);
+document.getElementById("farmRounds").addEventListener("input",calcFarm);
+/* re-render when language changes */
+document.querySelector(".lang-btn").addEventListener("click",function(){setTimeout(calcFarm,50);});
+calcFarm();
+</script>
+</body>
+</html>

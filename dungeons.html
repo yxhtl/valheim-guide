@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地牢与Boss详解 | Valheim 英灵神殿攻略</title>
+<meta name="description" content="Valheim地牢攻略：五大Boss(Eikthyr/The Elder/Bonemass/Moder/Yagluth)战斗机制、地牢类型(埋葬室/巨魔洞穴/沉没地穴/山洞/Fuling村)、全敌人图鉴与弱点分析。">
+<meta name="keywords" content="Valheim地牢,英灵神殿Boss,Eikthyr,The Elder,Bonemass,Moder,Yagluth,敌人图鉴,巨魔,尸鬼,Fuling">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Valheim 地牢与Boss详解","inLanguage":"zh-CN","about":"Valheim 五大Boss机制、地牢类型、掉落表与全敌人图鉴","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" class="active" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Dungeons">地牢战斗</span></div>
+    <span class="eyebrow" data-en="Dungeons">地牢战斗</span>
+    <h2 class="title" data-en="Boss Fights &amp; Enemy Codex">Boss战与敌人图鉴 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="5 Boss mechanics, all dungeon types &amp; drops, 15+ enemy stats and weaknesses. Source: valheim.fandom.com Wiki">五大Boss机制详解、全地牢类型与掉落、15+敌人数据与弱点。数据来源：valheim.fandom.com Wiki</p>
+
+    <div class="feature-grid" style="margin-bottom:30px">
+      <div class="fcard"><h4 data-en="Pre-Battle Prep">战前准备</h4><ul>
+        <li data-en="Bring enough food (3 types stacking is optimal)">带足食物（3种叠加最优）</li>
+        <li data-en="Corresponding resistance mead (poison/fire/frost)">对应抗性蜜酒（抗毒/抗火/抗寒）</li>
+        <li data-en="Healing mead ×5, Stamina mead ×3">治疗蜜酒×5、耐力蜜酒×3</li>
+        <li data-en="Bow + 100 arrows (ranged DPS)">弓箭+箭矢×100（远程输出）</li>
+        <li data-en="Melee weapon + shield (block &amp; counterattack)">近战武器+盾（格挡反击）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Core Combat Tips">战斗核心技巧</h4><ul>
+        <li data-en="Master the &quot;block &gt; counterattack&quot; rhythm">掌握"格挡&gt;反击"节奏</li>
+        <li data-en="Stamina management: don't empty it in one burst">体力管理：别一次打空</li>
+        <li data-en="Food sets your HP cap — eat full before fighting">食物决定HP上限，吃满再战</li>
+        <li data-en="Use terrain to your advantage (pillars/ledges)">利用地形卡位（石柱/高台）</li>
+        <li data-en="You drop gear on death — set a portal">死了掉装备，记得放传送门</li>
+      </ul></div>
+    </div>
+
+    <h4 style="color:var(--heading);margin-bottom:14px;font-size:20px" data-en="5 Dungeon Types">五大地牢类型</h4>
+    <div class="dungeon-floors">
+      <div class="dfloor">
+        <div class="dfloor-head"><div class="dfloor-badge">01</div><h4 data-en="Burial Chambers">埋葬室</h4></div>
+        <div class="dfloor-body" data-en="Underground dungeons in the Black Forest, entered via stone archways. Contains skeletons and chests. <b>Drops: Surtling Cores · Ancient Seeds · Chest loot</b>">黑森林地下地牢，入口为石砌拱门。内有骷髅兵和宝箱。<b>掉落：焰芯 · 古树种子 · 宝箱战利品</b></div>
+      </div>
+      <div class="dfloor f2">
+        <div class="dfloor-head"><div class="dfloor-badge">02</div><h4 data-en="Troll Cave">巨魔洞穴</h4></div>
+        <div class="dfloor-body" data-en="Caves in Black Forest hillsides, containing trolls. Bring a torch for light. <b>Drops: Troll Hide · Coins · Chest</b>">黑森林山体中的洞穴，内有巨魔。需火把照明。<b>掉落：巨魔皮 · 银币 · 宝箱</b></div>
+      </div>
+      <div class="dfloor f3">
+        <div class="dfloor-head"><div class="dfloor-badge">03</div><h4 data-en="Sunken Crypt">沉没地穴</h4></div>
+        <div class="dfloor-body" data-en="Swamp underground dungeons, requires <b>Swamp Key</b> to enter. Mine iron from muddy piles, contains draugr. <b>Drops: Iron Ore · Surtling Cores · Draugr drops</b>">沼泽地下地牢，需<b>古树钥匙</b>开门。泥泞堆中挖铁矿，内有尸鬼。<b>掉落：铁矿 · 焰芯 · 尸鬼掉落</b></div>
+      </div>
+      <div class="dfloor f4">
+        <div class="dfloor-head"><div class="dfloor-badge">04</div><h4 data-en="Mountain Cave">山洞</h4></div>
+        <div class="dfloor-body" data-en="Caves in the Mountains, containing wolves and bats. Requires frost-resistance gear. Use Wishbone to find chests. <b>Drops: Silver clues · Wolf Pelt · Chests</b>">雪山洞穴，内有狼和蝙蝠。需抗寒装备。有wishbone探测宝箱。<b>掉落：银矿线索 · 狼皮 · 宝箱</b></div>
+      </div>
+      <div class="dfloor f5">
+        <div class="dfloor-head"><div class="dfloor-badge">05</div><h4 data-en="Fuling Village">丑地精村庄</h4></div>
+        <div class="dfloor-body" data-en="Fuling goblin settlements on the Plains — not a traditional dungeon but very high difficulty. Requires Blackmetal gear. <b>Drops: Blackmetal Scraps · Barley · Flax · Fuling Totems</b>">平原上的丑地精聚落，非传统地牢但难度极高。需黑金属装备。<b>掉落：黑金属碎片 · 大麦 · 亚麻 · 丑地精图腾</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOSS STRATEGIES ===== -->
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Boss Guides">Boss 详解</span>
+    <h2 class="title" data-en="5 Boss Battle Strategies">五大Boss战斗策略</h2>
+    <p class="subtitle" data-en="Each Boss has unique mechanics. Understanding attack patterns is the key to victory.">每个Boss有独特机制，了解攻击模式是胜利关键。</p>
+    <div class="boss-grid">
+      <div class="boss-card">
+        <div class="boss-num">BOSS 01</div>
+        <h4 data-en="Eikthyr">赤鹿</h4>
+        <div class="boss-biome" data-en="Meadows · HP ~500 · Summon: 2× Deer Trophy">青草地 · HP约500 · 召唤：2×鹿Trophy</div>
+        <p class="boss-strat" data-en="<b>Attacks:</b> ① Lightning AOE (telegraph: head raised, charging) ② Charge (telegraph: head lowered) <br><b>Strategy:</b> Keep mid-distance, sidestep lightning, strafe charges. Bow is safest — 50 wood arrows suffice. Leather armor is fine. <br><b>Rewards:</b> Hard Antler (craft Antler Pickaxe), Eikthyr power (reduced stamina drain)"><b>攻击模式：</b>① 闪电AOE（前兆：抬头蓄电）② 冲撞（前兆：低头冲锋）<br><b>策略：</b>保持中距离，闪电时侧闪，冲撞时横移。弓箭输出最安全，木箭50支够用。穿皮甲即可。<br><b>奖励：</b>硬鹿角（做鹿角镐）、赤鹿能力（减体力消耗）</p>
+        <span class="boss-power" data-en="Power: Reduced stamina drain">能力：减体力消耗</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 02</div>
+        <h4 data-en="The Elder">古树长老</h4>
+        <div class="boss-biome" data-en="Black Forest · HP ~2500 · Summon: 3× Ancient Seeds">黑森林 · HP约2500 · 召唤：3×古树种子</div>
+        <p class="boss-strat" data-en="<b>Attacks:</b> ① Tracking roots (ground spikes) ② Root AOE (roots sprout nearby) ③ Ranged throw <br><b>Strategy:</b> Use altar pillars to block roots. Run around pillars when Boss fires tracking roots. Bring fire-resistance mead. Bronze sword + bronze shield for melee. <br><b>Rewards:</b> Swamp Key (opens Swamp crypts), The Elder power (faster tree chopping)"><b>攻击模式：</b>① 追踪根须（地面根刺）② 树根AOE（身边长出根须）③ 远程投掷<br><b>策略：</b>利用祭坛石柱卡位躲避根须，BOSS发射追踪根须时绕柱跑。带抗火蜜酒防误伤火。青铜剑+青铜盾近战。<br><b>奖励：</b>古树钥匙（开沼泽地穴）、古树长老能力（砍树更快）</p>
+        <span class="boss-power" data-en="Power: Faster tree chopping">能力：砍树更快</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 03</div>
+        <h4 data-en="Bonemass">骨团</h4>
+        <div class="boss-biome" data-en="Swamp · HP ~2500 · Summon: 2× Withered Bones">沼泽 · HP约2500 · 召唤：2×枯骨</div>
+        <p class="boss-strat" data-en="<b>Attacks:</b> ① Poison AOE ② Summons slime swarm ③ Melee swing <br><b>Strategy:</b> Must bring <b>poison-resistance mead</b>! Bonemass is <b>weak to blunt weapons</b> (hammer/club), resistant to blades. Use iron hammer, back off during poison clouds. Swamp terrain is rough — find flat ground. <br><b>Rewards:</b> Wishbone (detects silver), Bonemass power (damage reduction)"><b>攻击模式：</b>① 毒雾AOE ② 召唤史莱姆群 ③ 近战挥击<br><b>策略：</b>必须带<b>抗毒蜜酒</b>！骨团对<b>钝器弱</b>（锤/棍），对刃器抗性高。用铁锤输出，毒雾时后退拉开距离。沼泽地形差，找块平地打。<br><b>奖励：</b>Wishbone（愿望骨，探测银矿）、骨团能力（减伤）</p>
+        <span class="boss-power" data-en="Power: Damage reduction">能力：减伤</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 04</div>
+        <h4 data-en="Moder">冰龙</h4>
+        <div class="boss-biome" data-en="Mountain · HP ~3500 · Summon: 3× Dragon Eggs">雪山 · HP约3500 · 召唤：3×龙蛋</div>
+        <p class="boss-strat" data-en="<b>Attacks:</b> ① Flying ice breath (ice shards rain down) ② Dive bomb ③ Ground melee ice breath <br><b>Strategy:</b> Must have <b>frost resistance</b> (wolf armor + frost-resistance mead). Use bow for aerial phase, silver sword melee burst when landed. Dragon eggs are very heavy (200 each) — build a temp base near the altar. <br><b>Rewards:</b> Dragon Tear (craft Dragon Bed/Dragon Spear), Moder power (tailwind sailing)"><b>攻击模式：</b>① 飞行喷冰（冰柱落地）② 俯冲攻击 ③ 落地近战冰息<br><b>策略：</b>必须<b>抗寒</b>（狼甲+抗寒蜜酒）。空中用弓箭输出，落地后银剑近战爆发。龙蛋极重（200/个），建议在祭坛附近建临时基地存放。<br><b>奖励：</b>龙水晶（做龙床/龙矛）、冰龙能力（顺风航行）</p>
+        <span class="boss-power" data-en="Power: Tailwind sailing">能力：顺风航行</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 05</div>
+        <h4 data-en="Yagluth">亚格鲁斯</h4>
+        <div class="boss-biome" data-en="Plains · HP ~5000 · Summon: 5× Fuling Totems">平原 · HP约5000 · 召唤：5×丑地精图腾</div>
+        <p class="boss-strat" data-en="<b>Attacks:</b> ① Meteor rain (fireballs from sky) ② Laser sweep (beam from mouth) ③ Melee slam <br><b>Strategy:</b> Requires <b>full Blackmetal gear</b> + fire-resistance mead. Keep moving during meteor rain, get behind Boss during laser. Bring top-tier food (Dragon Pie + Black Bread + Blood Pudding). <br><b>Rewards:</b> Yagluth Totem (decoration), Yagluth power (reduced magic damage)"><b>攻击模式：</b>① 陨石雨（天上掉火球）② 激光扫射（嘴部光线）③ 近战拍击<br><b>策略：</b>需<b>全套黑金属装备</b>+抗火蜜酒。陨石雨时持续移动，激光时躲到Boss身后。带好顶级食物（龙肉派+黑面包+血布丁）。<br><b>奖励：</b>亚格鲁斯图腾（装饰）、亚格鲁斯能力（减法术伤害）</p>
+        <span class="boss-power" data-en="Power: Reduced magic damage">能力：减法术伤害</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOSS DROPS TABLE ===== -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow" data-en="Drop Reference">掉落速查</span>
+    <h2 class="title" data-en="Boss Drops Table">五大Boss掉落表</h2>
+    <p class="subtitle" data-en="Fixed drops and unlock rewards for each Boss — plan your next gear and progression.">击败每个Boss的固定掉落与解锁奖励一览，方便规划下一阶段装备与进度。</p>
+    <div class="farm-table">
+      <table>
+        <thead><tr>
+          <th data-en="Boss">Boss</th>
+          <th data-en="Biome">生物群落</th>
+          <th data-en="Fixed Drops">固定掉落</th>
+          <th data-en="Key Reward">关键奖励</th>
+          <th data-en="Unlocks">解锁内容</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td data-en="Eikthyr"><b>赤鹿</b></td>
+            <td><span class="biome-tag b-meadow" data-en="Meadows">青草地</span></td>
+            <td data-en="Hard Antler ×3">硬鹿角 ×3</td>
+            <td data-en="Eikthyr Trophy (wall mount)">赤鹿战利品（挂墙）</td>
+            <td data-en="Antler Pickaxe &gt; Bronze Age / Power: Reduced stamina drain">鹿角镐 &gt; 青铜时代 / 能力：减体力消耗</td>
+          </tr>
+          <tr>
+            <td data-en="The Elder"><b>古树长老</b></td>
+            <td><span class="biome-tag b-forest" data-en="Black Forest">黑森林</span></td>
+            <td data-en="Swamp Key ×1">古树钥匙 ×1</td>
+            <td data-en="The Elder Trophy">古树长老战利品</td>
+            <td data-en="Swamp Sunken Crypts / Power: Faster tree chopping">沼泽沉没地穴 / 能力：砍树更快</td>
+          </tr>
+          <tr>
+            <td data-en="Bonemass"><b>骨团</b></td>
+            <td><span class="biome-tag b-swamp" data-en="Swamp">沼泽</span></td>
+            <td data-en="Wishbone ×1">Wishbone（愿望骨）×1</td>
+            <td data-en="Bonemass Trophy">骨团战利品</td>
+            <td data-en="Detect silver &gt; Mountain stage / Power: Damage reduction">探测银矿 &gt; 雪山阶段 / 能力：减伤</td>
+          </tr>
+          <tr>
+            <td data-en="Moder"><b>冰龙</b></td>
+            <td><span class="biome-tag b-mountain" data-en="Mountain">雪山</span></td>
+            <td data-en="Dragon Tear ×9 · Dragon Meat ×10">龙水晶 ×9 · 龙肉 ×10</td>
+            <td data-en="Moder Trophy">冰龙战利品</td>
+            <td data-en="Dragon Bed/Spear crafting / Power: Tailwind sailing">龙床/龙矛制作 / 能力：顺风航行</td>
+          </tr>
+          <tr>
+            <td data-en="Yagluth"><b>亚格鲁斯</b></td>
+            <td><span class="biome-tag b-plains" data-en="Plains">平原</span></td>
+            <td data-en="Yagluth Totem ×3 · Coins ×30">亚格鲁斯图腾 ×3 · 银币 ×30</td>
+            <td data-en="Yagluth Trophy">亚格鲁斯战利品</td>
+            <td data-en="Ashlands prerequisite / Power: Reduced magic damage">灰烬之地前置 / 能力：减法术伤害</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENEMY CODEX ===== -->
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Enemy Codex">敌人图鉴</span>
+    <h2 class="title" data-en="Full Enemy Codex &amp; Weaknesses">全敌人图鉴与弱点</h2>
+    <p class="subtitle" data-en="Sorted by biome, with HP, damage, weaknesses and counter-strategies.">按生物群落分类，含血量、伤害、弱点与应对策略。</p>
+
+    <div class="chips" id="enemyChips">
+      <button class="chip active" data-biome="全部" data-en="All">全部</button>
+      <button class="chip" data-biome="青草地" data-en="Meadows">青草地</button>
+      <button class="chip" data-biome="黑森林" data-en="Black Forest">黑森林</button>
+      <button class="chip" data-biome="沼泽" data-en="Swamp">沼泽</button>
+      <button class="chip" data-biome="雪山" data-en="Mountain">雪山</button>
+      <button class="chip" data-biome="平原" data-en="Plains">平原</button>
+      <button class="chip" data-biome="海洋" data-en="Ocean">海洋</button>
+    </div>
+
+    <div class="enemy-grid" id="enemyGrid">
+      <div class="enemy" data-biome="青草地"><h5 data-en="Boar">野猪</h5><div class="estats"><span>HP 10</span><span data-en="DMG 5">伤害 5</span></div><p data-en="Common in Meadows, aggressive. One bow shot or 2-3 stone axe hits.">青草地常见，主动攻击。用弓箭一击或石斧2-3刀。</p><span class="danger d-low" data-en="Low risk">低危</span></div>
+      <div class="enemy" data-biome="青草地"><h5 data-en="Deer">鹿</h5><div class="estats"><span>HP 15</span><span data-en="Passive">被动</span></div><p data-en="Passive, flees when approached. Hunt for deer hide and venison. Requires stealth or bow.">被动逃跑，猎杀获取鹿皮和鹿肉。需潜行或弓箭。</p><span class="danger d-low" data-en="Low risk">低危</span></div>
+      <div class="enemy" data-biome="青草地"><h5 data-en="Neck">水蜥</h5><div class="estats"><span>HP 5</span><span data-en="DMG 5">伤害 5</span></div><p data-en="Small waterside creature with ranged spit attack. Very low HP, one-shot kill.">水边小怪，会吐远程攻击。低血量，一击即杀。</p><span class="danger d-low" data-en="Low risk">低危</span></div>
+      <div class="enemy" data-biome="黑森林"><h5 data-en="Greydwarf">灰矮人</h5><div class="estats"><span>HP 30</span><span data-en="DMG 10">伤害 10</span></div><p data-en="Common in Black Forest, spawns in groups. Throws rocks as ranged attack.">黑森林常见，群居出没。会投掷石头远程攻击。</p><span class="danger d-mid" data-en="Mid risk">中危</span></div>
+      <div class="enemy" data-biome="黑森林"><h5 data-en="Greydwarf Brute">灰矮人狂暴者</h5><div class="estats"><span>HP 60</span><span data-en="DMG 20">伤害 20</span></div><p data-en="Greydwarf elite, larger and hits harder. Block and counterattack in melee.">灰矮人精英，体型大攻击高。近战需格挡反击。</p><span class="danger d-mid" data-en="Mid risk">中危</span></div>
+      <div class="enemy" data-biome="黑森林"><h5 data-en="Troll">巨魔</h5><div class="estats"><span>HP 200</span><span data-en="DMG 45">伤害 45</span></div><p data-en="Large Black Forest creature, can smash through wood walls. Kite with bow or use troll cave terrain.">黑森林大型怪，能砸穿木墙。用弓箭风筝，或利用巨魔洞穴地形卡位。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="黑森林"><h5 data-en="Skeleton">骷髅兵</h5><div class="estats"><span>HP 20</span><span data-en="DMG 10">伤害 10</span></div><p data-en="Found in burial chambers, armed with sword or bow. Blunt weapons are effective.">埋葬室内出没，持剑或弓。钝器对其有效。</p><span class="danger d-low" data-en="Low risk">低危</span></div>
+      <div class="enemy" data-biome="沼泽"><h5 data-en="Draugr">尸鬼</h5><div class="estats"><span>HP 50</span><span data-en="DMG 20">伤害 20</span></div><p data-en="Found in Swamp crypts and at night, strong melee. Block then counterattack.">沼泽地穴和夜晚出没，近战强力。格挡后反击。</p><span class="danger d-mid" data-en="Mid risk">中危</span></div>
+      <div class="enemy" data-biome="沼泽"><h5 data-en="Draugr Elite">尸鬼精英</h5><div class="estats"><span>HP 100</span><span data-en="DMG 30">伤害 30</span></div><p data-en="Upgraded draugr, more HP and damage. Requires iron gear.">尸鬼强化版，攻击高血厚。需铁制装备应对。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="沼泽"><h5 data-en="Blob">史莱姆</h5><div class="estats"><span>HP 30</span><span data-en="DMG 15">伤害 15</span></div><p data-en="Swamp jumping attacker, explodes into poison on death. Bring poison-resistance mead.">沼泽跳跃攻击，死亡会爆毒。带抗毒蜜酒。</p><span class="danger d-mid" data-en="Mid risk">中危</span></div>
+      <div class="enemy" data-biome="沼泽"><h5 data-en="Wraith">溺鬼</h5><div class="estats"><span>HP 40</span><span data-en="DMG 25">伤害 25</span></div><p data-en="Swamp nighttime flying creature, dive-bombs from above.">沼泽夜晚飞行怪，从空中俯冲攻击。</p><span class="danger d-mid" data-en="Mid risk">中危</span></div>
+      <div class="enemy" data-biome="沼泽"><h5 data-en="Abomination">沼泽怪</h5><div class="estats"><span>HP 100</span><span data-en="DMG 30">伤害 30</span></div><p data-en="Large swamp tree-creature with AOE swipe. Use fire weapons.">沼泽大型树形怪，AOE挥击。用火属性武器。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="雪山"><h5 data-en="Wolf">狼</h5><div class="estats"><span>HP 40</span><span data-en="DMG 35">伤害 35</span></div><p data-en="Mountain pack hunter, fast and high damage. Will ambush. Wear wolf armor to tame.">雪山群居，速度快伤害高。会突袭。穿狼甲可驯服。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="雪山"><h5 data-en="Bat">蝙蝠</h5><div class="estats"><span>HP 10</span><span data-en="DMG 10">伤害 10</span></div><p data-en="Spawn in groups in mountain caves, low HP but annoying.">山洞内成群出没，低血量但烦人。</p><span class="danger d-low" data-en="Low risk">低危</span></div>
+      <div class="enemy" data-biome="平原"><h5 data-en="Deathsquito">杀人蚊</h5><div class="estats"><span>HP 10</span><span data-en="DMG 50">伤害 50</span></div><p data-en="Plains flying creature, low HP but extreme damage! One-shot can kill light-armored players.">平原飞行怪，低血量但伤害极高！一击可秒轻甲玩家。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="平原"><h5 data-en="Fuling">丑地精</h5><div class="estats"><span>HP 60</span><span data-en="DMG 30">伤害 30</span></div><p data-en="Plains natives, armed with sword/club/bow, spawn in groups. Requires Blackmetal gear.">平原土著，持刀/棒/弓，群居出没。需黑金属装备。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="平原"><h5 data-en="Fuling Berserker">丑地精狂战士</h5><div class="estats"><span>HP 200</span><span data-en="DMG 50">伤害 50</span></div><p data-en="Giant Fuling elite, large attack range and extreme damage.">丑地精巨型精英，攻击范围大伤害极高。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+      <div class="enemy" data-biome="海洋"><h5 data-en="Sea Serpent">海蛇</h5><div class="estats"><span>HP 100</span><span data-en="DMG 40">伤害 40</span></div><p data-en="Large ocean creature, attacks ships. Use abyssal harpoon to drag ashore and kill.">海洋大型怪，会攻击船只。用深渊鱼叉拖上岸击杀。</p><span class="danger d-high" data-en="High risk">高危</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script>
+/* Enemy filter */
+document.getElementById("enemyChips").addEventListener("click",e=>{
+  if(e.target.classList.contains("chip")){
+    document.querySelectorAll("#enemyChips .chip").forEach(c=>c.classList.remove("active"));
+    e.target.classList.add("active");
+    const biome=e.target.dataset.biome;
+    document.querySelectorAll("#enemyGrid .enemy").forEach(en=>{
+      en.style.display=(biome==="全部"||en.dataset.biome===biome)?"":"none";
+    });
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建造指南与建材计算器 | Valheim 英灵神殿攻略</title>
+<meta name="description" content="Valheim建造攻略：分区规划、承重机制、建材进阶路线，含交互式建材计算器，选蓝图自动算出所需材料数量。">
+<meta name="keywords" content="Valheim建造,英灵神殿建材,建造指南,建材计算器,承重,分区规划">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Valheim 建造指南与建材计算器","inLanguage":"zh-CN","about":"Valheim 建造分区、承重机制、建材进阶与交互式计算器","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" class="active" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Building">建造指南</span></div>
+    <span class="eyebrow" data-en="Building">建造指南</span>
+    <h2 class="title" data-en="From Thatched Hut to Viking Longhouse">从茅草棚到维京长屋</h2>
+    <p class="subtitle" data-en="Building is the soul of Valheim. Master zoning, structural integrity, and material progression to make your base both beautiful and functional.">建造是 Valheim 的灵魂玩法。掌握分区、承重与材料进阶，你的基地既好看又实用。</p>
+
+    <div class="feature-grid">
+      <div class="fcard"><h4 data-en="Zoning">分区规划</h4><p data-en="A good base starts with 4 zones:">好基地先分四区：</p><ul>
+        <li data-en="Living quarters (bed, storage chests, hearth)">居住区（床、储物箱、壁炉）</li>
+        <li data-en="Workshop (workbench, forge, smelter)">工坊区（工作台、锻造台、熔炉）</li>
+        <li data-en="Farm area (fields, beehives, pens)">农产区（田地、蜂箱、畜栏）</li>
+        <li data-en="Harbor (ships, docking pier)">港口区（船、出海码头）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Material Progression">材料进阶路线</h4><p data-en="Materials determine aesthetics and durability:">建材决定美观与耐久：</p><ul>
+        <li data-en="Wood &gt; Wood Wall (early game)">木材 &gt; 木墙（前期）</li>
+        <li data-en="Core Wood &gt; Log Wall (Black Forest style)">芯木 &gt; 圆木墙（黑森林风格）</li>
+        <li data-en="Stone &gt; Stone Wall (mid-game, fireproof)">石头 &gt; 石墙（中期防火）</li>
+        <li data-en="Iron Nails + Wood &gt; Reinforced Wood (late game)">铁钉+木材 &gt; 强化木（后期）</li>
+        <li data-en="Marble &gt; Stone Buildings (post-Mountain)">大理石 &gt; 石材建筑（雪山后）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Structural Integrity">承重与结构</h4><p data-en="Don't build castles in the air:">别只搭空中楼阁：</p><ul>
+        <li data-en="Each piece has a load value — color shows stability">每块建材有承重值，颜色显示稳固度</li>
+        <li data-en="Green = stable, Yellow = borderline, Red = will collapse">绿色=稳固，黄色=勉强，红色=会塌</li>
+        <li data-en="Pillars (2×2 wood posts) greatly increase load capacity">立柱（2×2木柱）可大幅提升承重</li>
+        <li data-en="Overhang max 2 tiles — add supports beyond that">悬挑不超过2格，超了加支撑柱</li>
+        <li data-en="Use 26°/45° roof slopes to prevent water pooling">屋顶用26°/45°斜面防积水</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Campfire &amp; Hearth">篝火与壁炉</h4><p data-en="Essential for warmth and cooking:">取暖与烹饪必备：</p><ul>
+        <li data-en="Campfire needs stone slabs or dirt ground">篝火需石板地面或泥土</li>
+        <li data-en="Hearth needs stone ground (indoor)">壁炉需石头地面（室内）</li>
+        <li data-en="Fire spreads to wood buildings — isolate carefully">火焰会蔓延烧木建筑，注意隔离</li>
+        <li data-en="Smoke rises — add ventilation holes in the roof">烟会上升，屋顶需开通风口</li>
+        <li data-en="Cooking station hangs beside campfire/hearth">烹饪台挂在篝火/壁炉旁</li>
+      </ul></div>
+    </div>
+
+    <!-- ===== BUILDING CALCULATOR ===== -->
+    <div class="calc-box">
+      <h4 style="color:var(--heading);margin-bottom:16px" data-en="Building Material Calculator">建筑材料计算器</h4>
+      <div class="calc-row">
+        <label data-en="Component">选择部件</label>
+        <select id="buildSelect">
+          <option value="wood_wall" data-en="Wood Wall">木墙</option>
+          <option value="wood_floor" data-en="Wood Floor">木地板</option>
+          <option value="wood_roof26" data-en="Wood Roof 26°">木屋顶 26°</option>
+          <option value="wood_pillar" data-en="2×2 Wood Pillar">2×2 木柱</option>
+          <option value="stone_wall" data-en="Stone Wall">石墙</option>
+          <option value="stone_floor" data-en="Stone Floor">石地板</option>
+          <option value="core_wall" data-en="Log Wall (Core Wood)">圆木墙（芯木）</option>
+          <option value="iron_reinforced" data-en="Reinforced Wood Wall (Iron Nails)">强化木墙（铁钉）</option>
+          <option value="door" data-en="Wood Door">木门</option>
+          <option value="window" data-en="Wood Window">木窗</option>
+        </select>
+      </div>
+      <div class="calc-row">
+        <label data-en="Quantity">建造数量</label>
+        <input type="number" id="buildQty" value="10" min="1" max="999">
+      </div>
+      <div class="calc-result" id="buildResult"></div>
+    </div>
+
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Fortifications">防御工事</h4><ul>
+        <li data-en="Stake fence (vs boars/greydwarves)">木桩围栏（防野猪/灰矮人）</li>
+        <li data-en="Stone wall (vs trolls — trolls smash wood walls)">石墙（防巨魔，巨魔能砸木墙）</li>
+        <li data-en="Moat + stakes (vs raid events)">壕沟+尖木桩（防突袭事件）</li>
+        <li data-en="Workbench range prevents mob spawning">工作台范围可防怪刷新</li>
+        <li data-en="Elevated base vs Swamp/Plains mobs">高处基地防沼泽/平原怪</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Decoration Tips">装饰技巧</h4><ul>
+        <li data-en="Deer/wolf head trophies on walls">鹿头/狼头挂墙做装饰</li>
+        <li data-en="Potted plants (carrots in planters)">盆栽（胡萝卜种花盆）</li>
+        <li data-en="Banners (unlocked by defeating Bosses)">旗帜（击败Boss解锁）</li>
+        <li data-en="Tables, chairs &amp; mugs for ambiance">桌椅+酒杯营造氛围</li>
+        <li data-en="Mix different styles for depth">不同风格混搭更有层次</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Storage Planning">仓储规划</h4><ul>
+        <li data-en="Wooden chests ×6 per group, along walls">木箱×6 一组，贴墙排列</li>
+        <li data-en="Sort by category: ore/wood/food/misc">按类别分区：矿/木/食/杂</li>
+        <li data-en="Keep chests within workbench range">箱子在工作台范围内</li>
+        <li data-en="Label each chest's contents">标记每个箱子存放物</li>
+        <li data-en="Use iron chests late game (larger capacity)">后期用铁箱（容量更大）</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script>
+/* Building material data */
+const buildings={
+  wood_wall:{name:"木墙",nameEn:"Wood Wall",mats:{木材:2},matsEn:{"Wood":2}},
+  wood_floor:{name:"木地板",nameEn:"Wood Floor",mats:{木材:2},matsEn:{"Wood":2}},
+  wood_roof26:{name:"木屋顶 26°",nameEn:"Wood Roof 26°",mats:{木材:2},matsEn:{"Wood":2}},
+  wood_pillar:{name:"2×2 木柱",nameEn:"2×2 Wood Pillar",mats:{木材:4},matsEn:{"Wood":4}},
+  stone_wall:{name:"石墙",nameEn:"Stone Wall",mats:{石头:2},matsEn:{"Stone":2}},
+  stone_floor:{name:"石地板",nameEn:"Stone Floor",mats:{石头:4},matsEn:{"Stone":4}},
+  core_wall:{name:"圆木墙",nameEn:"Log Wall",mats:{芯木:6},matsEn:{"Core Wood":6}},
+  iron_reinforced:{name:"强化木墙",nameEn:"Reinforced Wood Wall",mats:{木材:4,铁:2},matsEn:{"Wood":4,"Iron":2}},
+  door:{name:"木门",nameEn:"Wood Door",mats:{木材:6},matsEn:{"Wood":6}},
+  window:{name:"木窗",nameEn:"Wood Window",mats:{木材:2,玻璃:1},matsEn:{"Wood":2,"Glass":1}},
+};
+function calcBuild(){
+  const sel=document.getElementById("buildSelect").value;
+  const qty=parseInt(document.getElementById("buildQty").value)||0;
+  const b=buildings[sel];
+  const isEn=document.documentElement.lang==="en";
+  const bname=isEn?b.nameEn:b.name;
+  const mats=isEn?b.matsEn:b.mats;
+  const lblComponent=isEn?"Component":"部件";
+  const lblMatTypes=isEn?"Material types":"材料种类";
+  const lblTypes=isEn?"types":"种";
+  const lblPer=isEn?"each":"每件";
+  let html=`<div class="rline"><span>${lblComponent}</span><b>${bname} × ${qty}</b></div>`;
+  html+=`<div class="rline" style="border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:6px"><span>${lblMatTypes}</span><b>${Object.keys(mats).length} ${lblTypes}</b></div>`;
+  for(const [mat,per] of Object.entries(mats)){
+    const total=per*qty;
+    html+=`<div class="mat-line"><span class="mat-name">${mat}（${lblPer} ${per}）</span><span class="mat-qty">${total}</span></div>`;
+  }
+  document.getElementById("buildResult").innerHTML=html;
+}
+document.getElementById("buildSelect").addEventListener("change",calcBuild);
+document.getElementById("buildQty").addEventListener("input",calcBuild);
+/* re-render when language changes */
+document.querySelector(".lang-btn").addEventListener("click",function(){setTimeout(calcBuild,50);});
+calcBuild();
+</script>
+</body>
+</html>

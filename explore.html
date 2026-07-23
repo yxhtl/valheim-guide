@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生物群落探索指南 | Valheim 英灵神殿攻略</title>
+<meta name="description" content="Valheim六大生物群落(青草地/黑森林/沼泽/雪山/平原/海洋)探索指南：解锁顺序、特色资源、敌人、Boss及探索建议，附生物群落进度地图。">
+<meta name="keywords" content="Valheim生物群落,英灵神殿探索,青草地,黑森林,沼泽,雪山,平原,海洋,Mistlands,灰烬之地">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Valheim 生物群落探索指南","inLanguage":"zh-CN","about":"Valheim 六大生物群落探索顺序、特色资源、敌人与Boss","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" class="active" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Biomes">生物群落</span></div>
+    <span class="eyebrow" data-en="Biomes">生物群落</span>
+    <h2 class="title" data-en="6 Biome Exploration Order">六大生物群落探索顺序 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="The Valheim world is layered by biomes. Each has unique resources, enemies and Bosses — unlock them in order. Source: valheim.fandom.com Wiki">Valheim 世界按生物群落分层，每个群落有独特资源、敌人和Boss，需按顺序解锁。数据来源：valheim.fandom.com Wiki</p>
+
+    <!-- ===== PROGRESS MAP ===== -->
+    <div class="biome-progression">
+      <div class="bp-node b-meadow active" data-biome="青草地">
+        <div class="bp-step">01</div>
+        <div class="bp-name" data-en="Meadows">青草地</div>
+        <div class="bp-info" data-en="Start · Boss Eikthyr">起步 · Boss Eikthyr</div>
+      </div>
+      <div class="bp-arrow">&gt;</div>
+      <div class="bp-node b-forest" data-biome="黑森林">
+        <div class="bp-step">02</div>
+        <div class="bp-name" data-en="Black Forest">黑森林</div>
+        <div class="bp-info" data-en="Bronze · Boss The Elder">青铜 · Boss The Elder</div>
+      </div>
+      <div class="bp-arrow">&gt;</div>
+      <div class="bp-node b-swamp" data-biome="沼泽">
+        <div class="bp-step">03</div>
+        <div class="bp-name" data-en="Swamp">沼泽</div>
+        <div class="bp-info" data-en="Iron · Boss Bonemass">铁器 · Boss Bonemass</div>
+      </div>
+      <div class="bp-arrow">&gt;</div>
+      <div class="bp-node b-mountain" data-biome="雪山">
+        <div class="bp-step">04</div>
+        <div class="bp-name" data-en="Mountain">雪山</div>
+        <div class="bp-info" data-en="Silver · Boss Moder">银器 · Boss Moder</div>
+      </div>
+      <div class="bp-arrow">&gt;</div>
+      <div class="bp-node b-plains" data-biome="平原">
+        <div class="bp-step">05</div>
+        <div class="bp-name" data-en="Plains">平原</div>
+        <div class="bp-info" data-en="Blackmetal · Boss Yagluth">黑金属 · Boss Yagluth</div>
+      </div>
+      <div class="bp-arrow">&gt;</div>
+      <div class="bp-node b-ocean" data-biome="海洋">
+        <div class="bp-step">06</div>
+        <div class="bp-name" data-en="Ocean">海洋</div>
+        <div class="bp-info" data-en="Sea Serpents · Sailing">海蛇 · 航行通道</div>
+      </div>
+    </div>
+
+    <div class="biome-cards">
+      <div class="map-card b-meadow">
+        <div class="map-head"><div class="num">01</div><h4 data-en="Meadows">青草地 Meadows</h4></div>
+        <p class="map-desc" data-en="Green plains, starter area. Mild and safe with boars, deer and necks. Boss: Eikthyr">绿色平原，新手起步地。温和安全，野猪鹿水蜥出没。Boss：Eikthyr</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Wood, Flint, Stone, Raspberries, Mushrooms"><b>资源：</b>木材、燧石、石头、覆盆子、蘑菇</li>
+          <li data-en="<b>Enemies:</b> Boar, Neck (low risk)"><b>敌人：</b>野猪、水蜥（低危）</li>
+          <li data-en="<b>Boss:</b> Eikthyr (Stag)"><b>Boss：</b>Eikthyr（赤鹿）</li>
+          <li data-en="<b>Tip:</b> Build your first base, hunt deer, fight first Boss"><b>建议：</b>建初始基地，猎鹿打首Boss</li>
+        </ul>
+      </div>
+      <div class="map-card b-forest">
+        <div class="map-head"><div class="num">02</div><h4 data-en="Black Forest">黑森林 Black Forest</h4></div>
+        <p class="map-desc" data-en="Dark pine forest, source of copper and tin. Greydwarves, trolls and skeletons roam. Boss: The Elder">深色松林，铜锡矿产地。灰矮人巨魔骷髅出没。Boss：The Elder</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Copper, Tin, Core Wood, Surtling Cores, Carrot Seeds"><b>资源：</b>铜矿、锡矿、芯木、焰芯、胡萝卜种子</li>
+          <li data-en="<b>Enemies:</b> Greydwarf, Troll, Skeleton (mid-high risk)"><b>敌人：</b>灰矮人、巨魔、骷髅兵（中-高危）</li>
+          <li data-en="<b>Boss:</b> The Elder (Ancient Tree)"><b>Boss：</b>The Elder（古树长老）</li>
+          <li data-en="<b>Tip:</b> Bring antler pickaxe to mine, explore burial chambers"><b>建议：</b>带鹿角镐挖矿，探索埋葬室</li>
+        </ul>
+      </div>
+      <div class="map-card b-swamp">
+        <div class="map-head"><div class="num">03</div><h4 data-en="Swamp">沼泽 Swamp</h4></div>
+        <p class="map-desc" data-en="Dark wetlands, source of iron. Poisonous creatures and draugr, bring poison resist. Boss: Bonemass">阴暗湿地，铁矿来源。毒怪尸鬼出没，需抗毒。Boss：Bonemass</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Iron, Ancient Bark, Surtling Cores, Turnip Seeds"><b>资源：</b>铁矿、古树皮、焰芯、芜菁种子</li>
+          <li data-en="<b>Enemies:</b> Draugr, Blob, Wraith, Abomination (mid-high risk)"><b>敌人：</b>尸鬼、史莱姆、溺鬼、沼泽怪（中-高危）</li>
+          <li data-en="<b>Boss:</b> Bonemass (Bone Mass)"><b>Boss：</b>Bonemass（骨团）</li>
+          <li data-en="<b>Tip:</b> Bring poison-resistance mead, Swamp Key for crypts"><b>建议：</b>带抗毒蜜酒、古树钥匙开地穴</li>
+        </ul>
+      </div>
+      <div class="map-card b-mountain">
+        <div class="map-head"><div class="num">04</div><h4 data-en="Mountain">雪山 Mountain</h4></div>
+        <p class="map-desc" data-en="Tall snow peaks, source of silver. Bitter cold requires frost-resist gear, wolves are fierce. Boss: Moder">高耸雪山，银矿产地。严寒需抗寒装备，狼群凶猛。Boss：Moder</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Silver, Dragon Eggs, Wolf Pelt, Onion Seeds"><b>资源：</b>银矿、龙蛋、狼皮、洋葱种子</li>
+          <li data-en="<b>Enemies:</b> Wolf, Bat, Stone Golem (high risk)"><b>敌人：</b>狼、蝙蝠、石魔像（高危）</li>
+          <li data-en="<b>Boss:</b> Moder (Ice Dragon)"><b>Boss：</b>Moder（冰龙）</li>
+          <li data-en="<b>Tip:</b> Wear wolf armor + frost-resistance mead, bring Wishbone for silver"><b>建议：</b>穿狼甲+抗寒蜜酒，带wishbone找银矿</li>
+        </ul>
+      </div>
+      <div class="map-card b-plains">
+        <div class="map-head"><div class="num">05</div><h4 data-en="Plains">平原 Plains</h4></div>
+        <p class="map-desc" data-en="Open grasslands, source of blackmetal. Fuling goblins in groups, deathsquitos are lethal. Boss: Yagluth">开阔草原，黑金属来源。丑地精成群，杀人蚊致命。Boss：亚格鲁斯</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Blackmetal Scraps, Barley, Flax, Fuling Totems"><b>资源：</b>黑金属碎片、大麦、亚麻、丑地精图腾</li>
+          <li data-en="<b>Enemies:</b> Fuling, Fuling Berserker, Deathsquito (high risk)"><b>敌人：</b>丑地精、丑地精狂战士、杀人蚊（高危）</li>
+          <li data-en="<b>Boss:</b> Yagluth (Ancient One)"><b>Boss：</b>Yagluth（亚格鲁斯）</li>
+          <li data-en="<b>Tip:</b> Full Blackmetal gear, watch for deathsquito one-shots"><b>建议：</b>全套黑金属装备，小心杀人蚊一击秒</li>
+        </ul>
+      </div>
+      <div class="map-card b-ocean">
+        <div class="map-head"><div class="num">06</div><h4 data-en="Ocean">海洋 Ocean</h4></div>
+        <p class="map-desc" data-en="Vast waters connecting all continents. Sea serpents roam, ships are key. No Boss">广阔海域，连接各大陆。海蛇出没，船只是关键。无Boss</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Chitin (from sea serpents), Fish"><b>资源：</b>甲壳质（海蛇）、鱼</li>
+          <li data-en="<b>Enemies:</b> Sea Serpent (high risk)"><b>敌人：</b>海蛇（高危）</li>
+          <li data-en="<b>Boss:</b> None"><b>Boss：</b>无</li>
+          <li data-en="<b>Tip:</b> Upgrade your ship, bring abyssal harpoon for serpents"><b>建议：</b>升级船只，带深渊鱼叉对付海蛇</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Exploration Gear">探索装备清单</h4><ul>
+        <li data-en="Food ×3 types (HP/stamina/recovery)">食物×3种（HP/耐力/回复）</li>
+        <li data-en="Corresponding resistance mead">对应抗性蜜酒</li>
+        <li data-en="Bow + 50 arrows (scouting)">弓箭+箭矢×50（侦察）</li>
+        <li data-en="Torch (cave lighting)">火把（洞穴照明）</li>
+        <li data-en="Portal materials (return home)">传送门材料（回家）</li>
+        <li data-en="Raft/Longship (crossing sea)">raft/长船（跨海）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Sailing Tips">航行技巧</h4><ul>
+        <li data-en="Raft &gt; Longship &gt; Dragonship, progressive upgrades">木筏&gt;长船&gt;龙船逐步升级</li>
+        <li data-en="Tack in zigzag against headwinds">逆风走Z字形</li>
+        <li data-en="Moder power enables tailwind speed boost">Moder能力后可顺风加速</li>
+        <li data-en="Harpoon sea serpents and drag ashore">海蛇用鱼叉拖上岸打</li>
+        <li data-en="Ships can beach — watch water depth">船可搁浅，注意水深</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Map Marking">地图标记</h4><ul>
+        <li data-en="Use map markers to record resource locations">用地图标记记录资源点</li>
+        <li data-en="Always mark Boss altar locations">Boss祭坛位置必标记</li>
+        <li data-en="Use house icon for base location">基地位置用房屋图标</li>
+        <li data-en="Use circle marker for portals">传送门用圆形标记</li>
+        <li data-en="Use red X for danger zones">危险区用红色X标记</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Future Content">后续内容</h4><ul>
+        <li data-en="Mistlands">迷雾之地 Mistlands</li>
+        <li data-en="Ashlands">灰烬之地 Ashlands</li>
+        <li data-en="Deep North">深北 Deep North</li>
+        <li data-en="These are high-level zones">这些为高阶区域</li>
+        <li data-en="Bring top-tier gear before going">需顶级装备再前往</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英灵神殿生存指南 | Valheim 中文攻略站</title>
+<meta name="description" content="《英灵神殿》(Valheim) 中文攻略站：新手入门、资源采集、建造指南、地牢战斗、农场种植、生物群落探索与物品图鉴。从青草地到灰烬之地，一站式维京生存攻略。">
+<meta name="keywords" content="Valheim,英灵神殿,攻略,新手指南,资源采集,建造,地牢,Boss,农场,生物群落">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"英灵神殿生存指南","alternateName":"Valheim 中文攻略站","inLanguage":"zh-CN","url":"index.html","about":"《英灵神殿》(Valheim) 中文攻略站：新手入门、资源采集、建造指南、地牢战斗、农场种植、生物群落探索与物品图鉴"}
+</script>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="getting-started.html" class="nav-cta" data-i18n="nav.cta.start">开始攻略</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="hero" id="top">
+  <div class="wrap" style="padding-top:14px">
+    <div class="breadcrumb" style="color:#cfe6d9"><span data-en="Home">首页</span></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <h1 data-en="Fight, Die &amp; Rise&lt;br&gt;in &lt;span&gt;Valheim&lt;/span&gt;">在 <span>英灵神殿</span><br>战死，然后重生</h1>
+      <p class="tag" data-en="The Valheim guide — from your first axe strike to the depths of Ashlands, from a thatched hut to a mighty longhouse. Your Viking survival journey, all in one place.">《Valheim》中文攻略站 —— 从落海第一斧到灰烬之地深处，从一间茅草棚到宏伟长屋，你的维京生存之路一站搞定。</p>
+      <div class="hero-btns">
+        <a href="getting-started.html" class="btn btn-primary" data-en="7-Day Beginner Guide">新手七天速通</a>
+        <a href="explore.html" class="btn btn-ghost" data-en="Explore Biomes">生物群落探索</a>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><b>6</b><small data-en="Biomes">生物群落</small></div>
+        <div class="s"><b>5</b><small data-en="Boss Guides">Boss 详解</small></div>
+        <div class="s"><b>15+</b><small data-en="Enemy Codex">敌人图鉴</small></div>
+        <div class="s"><b>40+</b><small data-en="Items">物品收录</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="island-card">
+        <h3 data-en="First 3 Things Ashore">落海前三件事</h3>
+        <div class="day-row"><div class="day-badge">D1</div><div class="t"><b data-en="Chop Trees + Gather Flint">砍树 + 拾燧石</b><small data-en="Wood &amp; tool materials">解决木头与工具材料</small></div></div>
+        <div class="day-row"><div class="day-badge">D2</div><div class="t"><b data-en="Stone Axe + Hut">做石斧 + 简棚</b><small data-en="Upgrade tools, shelter for night">升级工具、有处过夜</small></div></div>
+        <div class="day-row"><div class="day-badge">D3</div><div class="t"><b data-en="Hunt Deer + Fight Eikthyr">猎鹿 + 打赤鹿</b><small data-en="Food &amp; first Boss fight">获取食物、首战Boss</small></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== QUICK ACCESS ===== -->
+<section style="padding-top:54px">
+  <div class="wrap">
+    <div class="quick">
+      <a href="getting-started.html" class="qcard"><h3 data-en="Beginner Guide">新手入门</h3><p data-en="7-day survival timeline, clear priorities">前七天生存时间线，优先级一目了然</p></a>
+      <a href="dungeons.html" class="qcard"><h3 data-en="Dungeons">地牢战斗</h3><p data-en="5 Boss mechanics &amp; enemy weakness codex">五大Boss机制与敌人弱点图鉴</p></a>
+      <a href="farming.html" class="qcard"><h3 data-en="Farming">农场种植</h3><p data-en="Crop yield table &amp; profit calculator">作物收益表与利润计算器</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOSS PROGRESS ===== -->
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Boss Progression">Boss 进度线</span>
+    <h2 class="title" data-en="Boss Defeat Order">五大Boss击败顺序</h2>
+    <p class="subtitle" data-en="Valheim's core drive is the Boss progression line. Each Boss unlocks new biomes and tool tiers. Defeat them in order to advance steadily.">Valheim 的核心驱动力是Boss进度线。每个Boss解锁新生物群落和新工具层级，按顺序击败才能稳步推进。</p>
+    <div class="boss-grid">
+      <div class="boss-card">
+        <div class="boss-num">BOSS 01</div>
+        <h4 data-en="Eikthyr">赤鹿</h4>
+        <div class="boss-biome" data-en="Meadows · Offer 2 Deer Trophies">青草地 · 献祭2鹿 Trophy</div>
+        <p class="boss-strat" data-en="First Boss. Craft an antler pickaxe after defeating it. Attacks include lightning AOE and charge — keep moving to dodge. Bow is safest for ranged DPS.">新手首战Boss。用鹿角 acquired 后制作鹿角镐。攻击以闪电AOE和冲撞为主，保持移动躲避。用弓箭远程输出最安全。</p>
+        <span class="boss-power" data-en="Power: Reduced stamina drain">掉落能力：减体力消耗</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 02</div>
+        <h4 data-en="The Elder">古树长老</h4>
+        <div class="boss-biome" data-en="Black Forest · Offer 3 Ancient Seeds">黑森林 · 献祭3古树种子</div>
+        <p class="boss-strat" data-en="Fought in the Black Forest. Fires tracking roots and AOE root attacks. Use terrain to block, bring fire-resistance mead, counterattack after dodging melee.">召唤后在黑森林战斗。会发射根须追踪和AOE树根攻击。利用地形卡位，带好抗火蜜酒，近战闪避后反击。</p>
+        <span class="boss-power" data-en="Power: Faster tree chopping">掉落能力：砍树更快</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 03</div>
+        <h4 data-en="Bonemass">骨团</h4>
+        <div class="boss-biome" data-en="Swamp · Offer 2 Withered Bones">沼泽 · 献祭2枯骨</div>
+        <p class="boss-strat" data-en="Swamp Boss, weak to blunt weapons. Summons slime swarms and poison AOE. Must bring poison-resistance mead. Use hammer/club for blunt damage, back off during poison clouds.">沼泽Boss，对钝器弱。会召唤史莱姆群和毒雾AOE。必须带抗毒蜜酒，用锤/棍类钝器输出，近身时注意毒雾范围。</p>
+        <span class="boss-power" data-en="Power: Damage reduction">掉落能力：减伤</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 04</div>
+        <h4 data-en="Moder">冰龙</h4>
+        <div class="boss-biome" data-en="Mountain · Offer 3 Dragon Eggs">雪山 · 献祭3龙蛋</div>
+        <p class="boss-strat" data-en="Mountain flying Boss. Breathes ice and dive-bombs. Stay warm with wolf armor + frost-resistance mead. Use bow for aerial phase, melee burst when landed. Dragon eggs are very heavy.">雪山飞行Boss。会飞行喷冰和俯冲攻击。注意保暖抗寒，用弓箭对其空中阶段输出，落地时近战爆发。龙蛋很重，需多次搬运。</p>
+        <span class="boss-power" data-en="Power: Tailwind sailing">掉落能力：顺风航行</span>
+      </div>
+      <div class="boss-card">
+        <div class="boss-num">BOSS 05</div>
+        <h4 data-en="Yagluth">亚格鲁斯</h4>
+        <div class="boss-biome" data-en="Plains · Offer 5 Fuling Totems">平原 · 献祭5丑地精图腾</div>
+        <p class="boss-strat" data-en="Endgame Boss. Summons meteor rain and laser sweeps. Requires full Blackmetal gear and top-tier food. Bring fire-resistance mead, dodge meteors, exploit gaps for melee.">终局Boss之一。会召唤陨石雨和激光扫射。需要全套黑金属装备和高级食物。带好抗火蜜酒，走位躲避陨石，近战抓间隙输出。</p>
+        <span class="boss-power" data-en="Power: Reduced magic damage">掉落能力：减法术伤害</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GUIDE OVERVIEW ===== -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow" data-en="Guide Navigation">攻略导航</span>
+    <h2 class="title" data-en="Site Guide Overview">全站攻略总览</h2>
+    <p class="subtitle" data-en="Six sections covering all core Valheim gameplay. Click a card to jump to the guide.">六大板块覆盖Valheim全部核心玩法，点击卡片直达对应攻略。</p>
+    <div class="feature-grid">
+      <a href="getting-started.html" class="fcard"><h4 data-en="Beginner Guide">新手入门</h4><p data-en="From your first axe to the first Boss — a 7-day survival timeline.">从落地第一斧到击败首个Boss，七天生存时间线。</p><ul><li data-en="Day 1-3: Gathering &amp; base building">Day 1-3 采集与建家</li><li data-en="Day 4-7: Deer hunting &amp; first Boss">Day 4-7 猎鹿与首战</li><li data-en="Tool upgrade paths">工具升级路线</li></ul></a>
+      <a href="resources.html" class="fcard"><h4 data-en="Resources">资源采集</h4><p data-en="Quick reference for all key material sources, filterable by tool and biome.">所有关键材料出处速查，按工具和生物群落筛选。</p><ul><li data-en="Wood / Stone / Flint">木材/石头/燧石</li><li data-en="Copper / Tin / Iron / Silver / Blackmetal">铜/锡/铁/银/黑金属</li><li data-en="Biome-specific resources">各生物群落特产</li></ul></a>
+      <a href="building.html" class="fcard"><h4 data-en="Building">建造指南</h4><p data-en="From thatched huts to longhouses, with a material calculator.">从茅草棚到长屋，含建材计算器。</p><ul><li data-en="Zoning &amp; structural integrity">分区规划与承重</li><li data-en="Building material progression">建材进阶路线</li><li data-en="Material cost calculator">材料消耗计算器</li></ul></a>
+      <a href="dungeons.html" class="fcard"><h4 data-en="Dungeons">地牢战斗</h4><p data-en="5 Boss guides and full enemy codex.">五大Boss详解与全敌人图鉴。</p><ul><li data-en="Boss mechanics &amp; weaknesses">Boss机制与弱点</li><li data-en="Dungeon types &amp; drops">地牢类型与掉落</li><li data-en="15+ enemy stats">15+敌人数据</li></ul></a>
+      <a href="farming.html" class="fcard"><h4 data-en="Farming">农场种植</h4><p data-en="Full crop planting guide and profit calculator.">全作物种植指南与收益计算器。</p><ul><li data-en="Carrot / Turnip / Onion">胡萝卜/芜菁/洋葱</li><li data-en="Barley / Flax">大麦/亚麻</li><li data-en="Profit calculator">利润计算器</li></ul></a>
+      <a href="explore.html" class="fcard"><h4 data-en="Biomes">生物群落</h4><p data-en="Six biome exploration guide.">六大生物群落探索指南。</p><ul><li data-en="Meadows &gt; Black Forest &gt; Swamp">青草地&gt;黑森林&gt;沼泽</li><li data-en="Mountain &gt; Plains &gt; Ocean">雪山&gt;平原&gt;海洋</li><li data-en="Unlock conditions &amp; resources">解锁条件与特产</li></ul></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section>
+  <div class="wrap">
+    <div class="cta-strip">
+      <h3 data-en="Guides Continuously Updated">攻略持续更新中</h3>
+      <p data-en="Content curated by the player community, guiding you from day one to the Ashlands. Feedback welcome!">本站内容由玩家社区整理，陪你从落海第一天走到灰烬之地。有问题欢迎反馈！</p>
+      <a href="getting-started.html" class="btn btn-primary" data-en="Start with Beginner Guide">从新手攻略开始</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a><a href="#" data-en="Links">友情链接</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

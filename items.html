@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物品图鉴 | Valheim 英灵神殿攻略</title>
+<meta name="description" content="Valheim物品图鉴：40+材料、食物、工具、武器、防具、蜜酒物品详解，含获取方式、用途与稀有度，按类别筛选。">
+<meta name="keywords" content="Valheim物品,英灵神殿图鉴,材料,食物,工具,武器,防具,蜜酒">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Valheim 物品图鉴","inLanguage":"zh-CN","itemListElement":[{"@type":"ListItem","position":1,"name":"木材"},{"@type":"ListItem","position":2,"name":"精细木"}]}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">V</span><span data-i18n="brand">英灵神殿生存指南</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="resources.html" data-i18n="nav.resources">资源采集</a>
+      <a href="building.html" data-i18n="nav.building">建造指南</a>
+      <a href="dungeons.html" data-i18n="nav.dungeons">地牢战斗</a>
+      <a href="farming.html" data-i18n="nav.farming">农场种植</a>
+      <a href="explore.html" data-i18n="nav.explore">生物群落</a>
+      <a href="items.html" class="active" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Items">物品图鉴</span></div>
+    <span class="eyebrow" data-en="Items">物品图鉴</span>
+    <h2 class="title" data-en="Item Codex">物品图鉴 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="40+ items: materials, food, tools, weapons, armor and mead. Includes acquisition, use and rarity. Source: valheim.fandom.com Wiki">40+物品详解：材料、食物、工具、武器、防具、蜜酒。含获取方式、用途与稀有度。数据来源：valheim.fandom.com Wiki</p>
+
+    <div class="chips" id="itemChips">
+      <button class="chip active" data-cat="全部" data-en="All">全部</button>
+      <button class="chip" data-cat="材料" data-en="Materials">材料</button>
+      <button class="chip" data-cat="食物" data-en="Food">食物</button>
+      <button class="chip" data-cat="工具" data-en="Tools">工具</button>
+      <button class="chip" data-cat="武器" data-en="Weapons">武器</button>
+      <button class="chip" data-cat="防具" data-en="Armor">防具</button>
+      <button class="chip" data-cat="蜜酒" data-en="Mead">蜜酒</button>
+    </div>
+
+    <div class="items-grid" id="itemsGrid">
+
+      <!-- ===== 材料 ===== -->
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Wood">木材</h4><span class="rarity tier-1" data-en="Material · Common">材料 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Chop trees (all biomes)"><b>获取：</b>砍树（所有生物群落树木）</p>
+          <p data-en="<b>Use:</b> Basic building, workbench, early tools, wood arrows"><b>用途：</b>基础建材、工作台、初级工具、木箭</p>
+          <p data-en="<b>Note:</b> Most used early material, stockpile 500+"><b>备注：</b>前期最常用材料，建议囤积500+</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Fine Wood">精细木</h4><span class="rarity tier-2" data-en="Material · Uncommon">材料 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Chop birch and oak in Meadows (needs Bronze Axe+)"><b>获取：</b>砍伐青草地桦树、橡树（需青铜斧+）</p>
+          <p data-en="<b>Use:</b> Advanced building, furniture, some weapons"><b>用途：</b>高级建筑、家具、部分武器</p>
+          <p data-en="<b>Note:</b> Only large deciduous trees drop it"><b>备注：</b>大棵落叶树才掉，小树只给木材</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Core Wood">芯木</h4><span class="rarity tier-2" data-en="Material · Uncommon">材料 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Chop pines in Black Forest (needs Stone Axe+)"><b>获取：</b>砍伐黑森林松树（需石斧+）</p>
+          <p data-en="<b>Use:</b> Log walls, support beams, log floors"><b>用途：</b>圆木墙、支撑柱、圆木地板</p>
+          <p data-en="<b>Note:</b> Core material for Black Forest style buildings"><b>备注：</b>黑森林风格建筑核心材料</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Ancient Bark">古树皮</h4><span class="rarity tier-2" data-en="Material · Uncommon">材料 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Chop ancient trees in Swamp (needs Bronze Axe+)"><b>获取：</b>砍伐沼泽古树（需青铜斧+）</p>
+          <p data-en="<b>Use:</b> Swamp-style buildings, some weapons"><b>用途：</b>沼泽风格建筑、部分武器</p>
+          <p data-en="<b>Note:</b> Signature building material for the Swamp stage"><b>备注：</b>沼泽阶段的特色建材</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Stone">石头</h4><span class="rarity tier-1" data-en="Material · Common">材料 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Mine surface rocks (needs Stone Pickaxe+)"><b>获取：</b>挖地面散落石块（需石镐+）</p>
+          <p data-en="<b>Use:</b> Stone walls, stone floors, campfire base, grindstones"><b>用途：</b>石墙、石地板、篝火地基、磨石</p>
+          <p data-en="<b>Note:</b> Essential for mid-game stone buildings, fireproof"><b>备注：</b>中期石质建筑必备，防火</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Flint">燧石</h4><span class="rarity tier-1" data-en="Material · Common">材料 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Pick up along shorelines and beaches"><b>获取：</b>水边、海岸徒手拾取</p>
+          <p data-en="<b>Use:</b> Flint Axe, Flint Spear, Flint Arrows, Torch"><b>用途：</b>燧石斧、燧石矛、燧石箭、火把</p>
+          <p data-en="<b>Note:</b> Core early-game tool material, walk the shore to collect"><b>备注：</b>前期工具核心，沿水边走一圈收一堆</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Copper Ore">铜矿</h4><span class="rarity tier-2" data-en="Material · Uncommon">材料 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Surface deposits in Black Forest (needs Antler Pickaxe+)"><b>获取：</b>黑森林地面铜矿脉（需鹿角镐+）</p>
+          <p data-en="<b>Use:</b> Smelt copper ingot &gt; 2 copper + 1 tin = Bronze"><b>用途：</b>冶炼铜锭 &gt; 2铜+1锡=青铜</p>
+          <p data-en="<b>Note:</b> Bronze Age start, large deposits vanish at bottom"><b>备注：</b>青铜时代起点，矿脉很大挖到底消失</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Tin Ore">锡矿</h4><span class="rarity tier-2" data-en="Material · Uncommon">材料 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Silver-white rocks near water in Black Forest (needs Antler Pickaxe+)"><b>获取：</b>黑森林水边银白色石头（需鹿角镐+）</p>
+          <p data-en="<b>Use:</b> Smelt tin ingot &gt; combine with copper for Bronze"><b>用途：</b>冶炼锡锭 &gt; 与铜合成青铜</p>
+          <p data-en="<b>Note:</b> Small deposits, search along Black Forest coast"><b>备注：</b>体积小，沿黑森林海岸线找</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Iron Ore">铁矿</h4><span class="rarity tier-3" data-en="Material · Rare">材料 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Muddy piles in Swamp sunken crypts (needs Bronze Pickaxe + Swamp Key)"><b>获取：</b>沼泽沉没地穴泥泞堆（需青铜镐+古树钥匙开门）</p>
+          <p data-en="<b>Use:</b> Smelt iron ingot &gt; iron tools/weapons/armor"><b>用途：</b>冶炼铁锭 &gt; 铁制工具/武器/防具</p>
+          <p data-en="<b>Note:</b> Cannot be teleported — must ship by boat"><b>备注：</b>不能传送，必须用船运回基地</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Silver Ore">银矿</h4><span class="rarity tier-4" data-en="Material · Epic">材料 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Underground deposits in Mountains (needs Iron Pickaxe + Wishbone)"><b>获取：</b>雪山地下矿脉（需铁镐+wishbone探测）</p>
+          <p data-en="<b>Use:</b> Smelt silver ingot &gt; silver armor, silver sword, wolf armor"><b>用途：</b>冶炼银锭 &gt; 银甲、银剑、狼甲</p>
+          <p data-en="<b>Note:</b> Invisible on surface, must use Wishbone to detect"><b>备注：</b>地面看不到，必须用愿望骨探测</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Blackmetal Scrap">黑金属碎片</h4><span class="rarity tier-4" data-en="Material · Epic">材料 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Dropped by Fuling goblins in Plains"><b>获取：</b>击杀平原丑地精掉落</p>
+          <p data-en="<b>Use:</b> Smelt into Blackmetal &gt; strongest weapons/armor"><b>用途：</b>炼成黑金属 &gt; 游戏最强武器/防具</p>
+          <p data-en="<b>Note:</b> Smelt in forge, core Plains stage material"><b>备注：</b>需在熔炉炼制，平原阶段核心</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Surtling Core">焰芯</h4><span class="rarity tier-3" data-en="Material · Rare">材料 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Black Forest burial chamber chests, Swamp crypts"><b>获取：</b>黑森林埋葬室宝箱、沼泽地穴</p>
+          <p data-en="<b>Use:</b> Fermenter, Portals, some advanced buildings"><b>用途：</b>发酵桶、传送门、部分高级建筑</p>
+          <p data-en="<b>Note:</b> Essential for portals, high demand late game"><b>备注：</b>传送门必备，后期大量需求</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="材料">
+        <div class="item-head"><h4 data-en="Chitin">甲壳质</h4><span class="rarity tier-4" data-en="Material · Epic">材料 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Harvest from sea serpents in Ocean (must drag ashore)"><b>获取：</b>海洋击杀海蛇后剥取（需拖上岸）</p>
+          <p data-en="<b>Use:</b> Chitin Spear, Abyssal Harpoon"><b>用途：</b>甲壳质长矛、深渊猎手鱼叉</p>
+          <p data-en="<b>Note:</b> Use abyssal harpoon to pin serpent and drag ashore"><b>备注：</b>需用深渊鱼叉将海蛇固定拖上岸</p>
+        </div>
+      </div>
+
+      <!-- ===== 食物 ===== -->
+      <div class="item-detail" data-cat="食物">
+        <div class="item-head"><h4 data-en="Raspberry">覆盆子</h4><span class="rarity tier-1" data-en="Food · Common">食物 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Pick from bushes in Meadows"><b>获取：</b>青草地灌木丛徒手拾取</p>
+          <p data-en="<b>Effect:</b> HP 3 / Stamina 20 / Duration 600s"><b>效果：</b>HP 3 / 耐力 20 / 持续 600s</p>
+          <p data-en="<b>Note:</b> Early transitional food, can be farmed"><b>备注：</b>前期过渡食物，可种植再生</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="食物">
+        <div class="item-head"><h4 data-en="Cooked Meat">熟肉</h4><span class="rarity tier-1" data-en="Food · Common">食物 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Cook raw meat on campfire/hearth"><b>获取：</b>生肉在篝火/壁炉上烤制</p>
+          <p data-en="<b>Effect:</b> HP 25 / Stamina 20 / Duration 600s"><b>效果：</b>HP 25 / 耐力 20 / 持续 600s</p>
+          <p data-en="<b>Note:</b> Main early healing food, boars/deer drop raw meat"><b>备注：</b>前期回血主力，野猪/鹿掉生肉</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="食物">
+        <div class="item-head"><h4 data-en="Carrot Soup">胡萝卜汤</h4><span class="rarity tier-2" data-en="Food · Uncommon">食物 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Cook in cauldron (Carrot + Mushroom)"><b>获取：</b>大锅合成（胡萝卜+蘑菇）</p>
+          <p data-en="<b>Effect:</b> HP 15 / Stamina 40 / Duration 1200s"><b>效果：</b>HP 15 / 耐力 40 / 持续 1200s</p>
+          <p data-en="<b>Note:</b> Mid-game stamina food, sustainable with carrot farm"><b>备注：</b>中期耐力食物，种胡萝卜可持续</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="食物">
+        <div class="item-head"><h4 data-en="Black Bread">黑面包</h4><span class="rarity tier-3" data-en="Food · Rare">食物 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Cook in cauldron (Barley Flour + Water)"><b>获取：</b>大锅合成（大麦粉+水）</p>
+          <p data-en="<b>Effect:</b> HP 25 / Stamina 50 / Duration 1500s"><b>效果：</b>HP 25 / 耐力 50 / 持续 1500s</p>
+          <p data-en="<b>Note:</b> Late-game food, requires windmill for barley flour"><b>备注：</b>后期高级食物，需风车磨大麦粉</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="食物">
+        <div class="item-head"><h4 data-en="Dragon Pie">龙肉派</h4><span class="rarity tier-4" data-en="Food · Epic">食物 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Source:</b> Cook in cauldron (Dragon Meat + Barley Flour)"><b>获取：</b>大锅合成（龙肉+大麦粉）</p>
+          <p data-en="<b>Effect:</b> HP 80 / Stamina 60 / Duration 1800s"><b>效果：</b>HP 80 / 耐力 60 / 持续 1800s</p>
+          <p data-en="<b>Note:</b> Top-tier food, get dragon meat from Moder"><b>备注：</b>顶级食物，打冰龙获得龙肉</p>
+        </div>
+      </div>
+
+      <!-- ===== 工具 ===== -->
+      <div class="item-detail" data-cat="工具">
+        <div class="item-head"><h4 data-en="Stone Axe">石斧</h4><span class="rarity tier-1" data-en="Tool · Common">工具 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Wood ×5 + Flint ×2 (Workbench)"><b>制作：</b>木材×5 + 燧石×2（工作台）</p>
+          <p data-en="<b>Use:</b> Chop trees, basic combat"><b>用途：</b>砍树、初级战斗</p>
+          <p data-en="<b>Note:</b> Main D1-2 tool, double efficiency vs bare hands"><b>备注：</b>D1-2主力工具，效率比徒手翻倍</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="工具">
+        <div class="item-head"><h4 data-en="Antler Pickaxe">鹿角镐</h4><span class="rarity tier-2" data-en="Tool · Uncommon">工具 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Hard Antler ×1 + Wood ×2 (Workbench)"><b>制作：</b>硬鹿角×1 + 木材×2（工作台）</p>
+          <p data-en="<b>Use:</b> Mine copper and tin (Bronze Age entry)"><b>用途：</b>挖铜矿、锡矿（青铜时代入口）</p>
+          <p data-en="<b>Note:</b> Only after Eikthyr, key progression tool"><b>备注：</b>打完赤鹿才能做，关键进度工具</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="工具">
+        <div class="item-head"><h4 data-en="Bronze Pickaxe">青铜镐</h4><span class="rarity tier-2" data-en="Tool · Uncommon">工具 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Bronze ×2 + Core Wood ×3 (Forge)"><b>制作：</b>青铜×2 + 芯木×3（锻造台）</p>
+          <p data-en="<b>Use:</b> Mine iron (Swamp crypts), stone"><b>用途：</b>挖铁矿（沼泽地穴）、石头</p>
+          <p data-en="<b>Note:</b> Mining upgrade for Black Forest stage"><b>备注：</b>黑森林阶段的挖矿升级</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="工具">
+        <div class="item-head"><h4 data-en="Iron Pickaxe">铁镐</h4><span class="rarity tier-3" data-en="Tool · Rare">工具 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Iron ×3 + Core Wood ×3 (Forge)"><b>制作：</b>铁×3 + 芯木×3（锻造台）</p>
+          <p data-en="<b>Use:</b> Mine silver (Mountain), advanced ores"><b>用途：</b>挖银矿（雪山）、高级矿石</p>
+          <p data-en="<b>Note:</b> Crafted post-Swamp, essential for Mountain"><b>备注：</b>沼泽阶段后制作，雪山必备</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="工具">
+        <div class="item-head"><h4 data-en="Cultivator">耕耙</h4><span class="rarity tier-2" data-en="Tool · Uncommon">工具 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Bronze ×1 + Core Wood ×5 (Forge)"><b>制作：</b>青铜×1 + 芯木×5（锻造台）</p>
+          <p data-en="<b>Use:</b> Till soil for planting crops"><b>用途：</b>翻土种植作物</p>
+          <p data-en="<b>Note:</b> Farming essential, pair with seeds"><b>备注：</b>农业必备，配合种子使用</p>
+        </div>
+      </div>
+
+      <!-- ===== 武器 ===== -->
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Bow">弓</h4><span class="rarity tier-1" data-en="Weapon · Common">武器 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Wood ×10 + Leather Scraps ×2 (Workbench)"><b>制作：</b>木材×10 + 皮革碎片×2（工作台）</p>
+          <p data-en="<b>Damage:</b> 22 (base) / ranged DPS with wood arrows"><b>伤害：</b>22（基础）/ 配木箭远程输出</p>
+          <p data-en="<b>Note:</b> Deer hunting and Boss kiting essential, used throughout"><b>备注：</b>猎鹿、风筝Boss神器，全程使用</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Bronze Sword">青铜剑</h4><span class="rarity tier-2" data-en="Weapon · Uncommon">武器 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Bronze ×2 + Wood ×3 (Forge)"><b>制作：</b>青铜×2 + 木材×3（锻造台）</p>
+          <p data-en="<b>Damage:</b> 35 / 3rd hit combo has horizontal slash"><b>伤害：</b>35 / 第三段连击有横扫</p>
+          <p data-en="<b>Note:</b> Main melee weapon for Black Forest stage"><b>备注：</b>黑森林阶段主力近战武器</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Iron Sword">铁剑</h4><span class="rarity tier-3" data-en="Weapon · Rare">武器 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Iron ×2 + Leather ×2 (Forge)"><b>制作：</b>铁×2 + 皮革×2（锻造台）</p>
+          <p data-en="<b>Damage:</b> 45 / sharper than bronze"><b>伤害：</b>45 / 比青铜剑更锋利</p>
+          <p data-en="<b>Note:</b> Main Swamp stage weapon, efficient vs draugr"><b>备注：</b>沼泽阶段主力，打尸鬼高效</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Silver Sword">银剑</h4><span class="rarity tier-4" data-en="Weapon · Epic">武器 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Silver ×3 + Leather ×2 + Bloodbag ×5 (Forge)"><b>制作：</b>银×3 + 皮革×2 + 血块×5（锻造台）</p>
+          <p data-en="<b>Damage:</b> 55 / bonus damage to undead"><b>伤害：</b>55 / 对亡灵额外伤害</p>
+          <p data-en="<b>Note:</b> Mountain stage, bonus vs undead enemies"><b>备注：</b>雪山阶段，对亡灵类敌人有加成</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Blackmetal Sword">黑金属剑</h4><span class="rarity tier-4" data-en="Weapon · Epic">武器 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Blackmetal ×3 + Wood ×2 (Forge)"><b>制作：</b>黑金属×3 + 木材×2（锻造台）</p>
+          <p data-en="<b>Damage:</b> 73 / strongest sword in game"><b>伤害：</b>73 / 游戏最强剑</p>
+          <p data-en="<b>Note:</b> Plains stage ultimate weapon, highest damage"><b>备注：</b>平原阶段终极武器，伤害最高</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="武器">
+        <div class="item-head"><h4 data-en="Iron Hammer">铁锤</h4><span class="rarity tier-3" data-en="Weapon · Rare">武器 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Iron ×1 + Wood ×3 (Forge)"><b>制作：</b>铁×1 + 木材×3（锻造台）</p>
+          <p data-en="<b>Damage:</b> 40 / blunt weapon, AOE knockback"><b>伤害：</b>40 / 钝器，AOE击退</p>
+          <p data-en="<b>Note:</b> Essential for Bonemass (blunt vs bone)"><b>备注：</b>打骨团必备（钝器克骨团）</p>
+        </div>
+      </div>
+
+      <!-- ===== 防具 ===== -->
+      <div class="item-detail" data-cat="防具">
+        <div class="item-head"><h4 data-en="Leather Armor Set">皮甲套装</h4><span class="rarity tier-1" data-en="Armor · Common">防具 · 常见</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Boar Hide + Deer Hide (Workbench)"><b>制作：</b>野猪皮+鹿皮（工作台）</p>
+          <p data-en="<b>Armor:</b> Full set armor value 6"><b>护甲：</b>全套护甲值 6</p>
+          <p data-en="<b>Note:</b> Early armor, used D1-3"><b>备注：</b>前期防具，D1-3使用</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="防具">
+        <div class="item-head"><h4 data-en="Bronze Armor Set">青铜甲套装</h4><span class="rarity tier-2" data-en="Armor · Uncommon">防具 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Bronze + Leather (Forge)"><b>制作：</b>青铜+皮革（锻造台）</p>
+          <p data-en="<b>Armor:</b> Full set armor value 12"><b>护甲：</b>全套护甲值 12</p>
+          <p data-en="<b>Note:</b> Black Forest stage armor, for The Elder"><b>备注：</b>黑森林阶段防具，打古树长老用</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="防具">
+        <div class="item-head"><h4 data-en="Iron Armor Set">铁甲套装</h4><span class="rarity tier-3" data-en="Armor · Rare">防具 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Iron + Leather (Forge)"><b>制作：</b>铁+皮革（锻造台）</p>
+          <p data-en="<b>Armor:</b> Full set armor value 18"><b>护甲：</b>全套护甲值 18</p>
+          <p data-en="<b>Note:</b> Swamp stage armor, for Bonemass"><b>备注：</b>沼泽阶段防具，打Bonemass用</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="防具">
+        <div class="item-head"><h4 data-en="Wolf Armor Set">狼甲套装</h4><span class="rarity tier-4" data-en="Armor · Epic">防具 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Silver + Wolf Pelt + Wolf Fang (Forge)"><b>制作：</b>银+狼皮+狼牙（锻造台）</p>
+          <p data-en="<b>Armor:</b> Full set armor value 24 / provides frost resistance"><b>护甲：</b>全套护甲值 24 / 提供抗寒</p>
+          <p data-en="<b>Note:</b> Mountain stage, built-in frost resistance"><b>备注：</b>雪山阶段防具，自带抗寒效果</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="防具">
+        <div class="item-head"><h4 data-en="Blackmetal Armor Set">黑金属甲套装</h4><span class="rarity tier-4" data-en="Armor · Epic">防具 · 史诗</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Blackmetal + Linen Thread (Forge)"><b>制作：</b>黑金属+亚麻线（锻造台）</p>
+          <p data-en="<b>Armor:</b> Full set armor value 30 / strongest in game"><b>护甲：</b>全套护甲值 30 / 游戏最强</p>
+          <p data-en="<b>Note:</b> Plains stage ultimate armor"><b>备注：</b>平原阶段终极防具</p>
+        </div>
+      </div>
+
+      <!-- ===== 蜜酒 ===== -->
+      <div class="item-detail" data-cat="蜜酒">
+        <div class="item-head"><h4 data-en="Poison-Resistance Mead">抗毒蜜酒</h4><span class="rarity tier-2" data-en="Mead · Uncommon">蜜酒 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Honey + Poison Sac + Thistle (Fermenter)"><b>制作：</b>蜂蜜+毒液囊+蓟草（发酵桶）</p>
+          <p data-en="<b>Effect:</b> Immune to poison for 10 minutes"><b>效果：</b>10分钟内免疫中毒</p>
+          <p data-en="<b>Note:</b> Swamp essential, required for blobs/abominations"><b>备注：</b>沼泽必备，打史莱姆/沼泽怪必需</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="蜜酒">
+        <div class="item-head"><h4 data-en="Frost-Resistance Mead">抗寒蜜酒</h4><span class="rarity tier-3" data-en="Mead · Rare">蜜酒 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Honey + Bloodbag + Thistle (Fermenter)"><b>制作：</b>蜂蜜+血袋+蓟草（发酵桶）</p>
+          <p data-en="<b>Effect:</b> Immune to freezing for 10 minutes"><b>效果：</b>10分钟内免疫严寒</p>
+          <p data-en="<b>Note:</b> Mountain essential, alternative to wolf armor"><b>备注：</b>雪山必备，无狼甲时的替代方案</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="蜜酒">
+        <div class="item-head"><h4 data-en="Fire-Resistance Mead">抗火蜜酒</h4><span class="rarity tier-3" data-en="Mead · Rare">蜜酒 · 稀有</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Honey + Bloodbag + Lizard Tail (Fermenter)"><b>制作：</b>蜂蜜+血袋+蜥蜴尾巴（发酵桶）</p>
+          <p data-en="<b>Effect:</b> Reduce fire damage for 10 minutes"><b>效果：</b>10分钟内减免火焰伤害</p>
+          <p data-en="<b>Note:</b> Used against Yagluth/The Elder"><b>备注：</b>打Yagluth/The Elder使用</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="蜜酒">
+        <div class="item-head"><h4 data-en="Healing Mead">治疗蜜酒</h4><span class="rarity tier-2" data-en="Mead · Uncommon">蜜酒 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Honey + Bloodbag + Dandelion (Fermenter)"><b>制作：</b>蜂蜜+血袋+蒲公英（发酵桶）</p>
+          <p data-en="<b>Effect:</b> Instantly restores large amount of HP (cooldown)"><b>效果：</b>瞬间回复大量HP（有冷却）</p>
+          <p data-en="<b>Note:</b> Combat lifesaver, always bring 5+"><b>备注：</b>战斗中保命，必带5瓶+</p>
+        </div>
+      </div>
+      <div class="item-detail" data-cat="蜜酒">
+        <div class="item-head"><h4 data-en="Stamina Mead">耐力蜜酒</h4><span class="rarity tier-2" data-en="Mead · Uncommon">蜜酒 · 普通</span></div>
+        <div class="item-body">
+          <p data-en="<b>Craft:</b> Honey + Raspberry + Mushroom (Fermenter)"><b>制作：</b>蜂蜜+覆盆子+蘑菇（发酵桶）</p>
+          <p data-en="<b>Effect:</b> Greatly boosts stamina recovery briefly"><b>效果：</b>短时间内大幅提升耐力回复</p>
+          <p data-en="<b>Note:</b> Use for running/combat bursts"><b>备注：</b>跑路/战斗爆发时使用</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:24px;font-size:14px;color:var(--ink-soft)" data-en="<b>Rarity Guide:</b> Common = easy early game; Uncommon = regular mid game; Rare = key late game; Epic = ultimate gear material. This codex is continuously updated with more items to come.">
+      <b>稀有度说明：</b> 常见 = 前期易得；普通 = 中期常规；稀有 = 后期关键；史诗 = 终极装备材料。
+      本图鉴持续更新中，后续将补充更多物品。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">V</span><span data-en="Valheim Survival Guide">英灵神殿生存指南</span></a>
+        <p data-i18n="foot.branddesc">《Valheim》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Iron Gate AB.">本站为玩家非营利性攻略站，游戏版权归 Iron Gate AB 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
+      <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、物品、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script>
+/* Item filter */
+document.getElementById("itemChips").addEventListener("click",e=>{
+  if(e.target.classList.contains("chip")){
+    document.querySelectorAll("#itemChips .chip").forEach(c=>c.classList.remove("active"));
+    e.target.classList.add("active");
+    const cat=e.target.dataset.cat;
+    document.querySelectorAll("#itemsGrid .item-detail").forEach(it=>{
+      it.style.display=(cat==="全部"||it.dataset.cat===cat)?"":"none";
+    });
+  }
+});
+</script>
+</body>
+</html>
