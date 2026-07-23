@@ -10,6 +10,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Valheim 建造指南与建材计算器","inLanguage":"zh-CN","about":"Valheim 建造分区、承重机制、建材进阶与交互式计算器","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
 </script>
+  <!-- 百度统计 -->
+  <script async src="https://hm.baidu.com/hm.js?71f28761d7809372b129ffb5598d0451"></script>
 </head>
 <body>
 
@@ -54,7 +56,8 @@
         <li data-en="Core Wood &gt; Log Wall (Black Forest style)">芯木 &gt; 圆木墙（黑森林风格）</li>
         <li data-en="Stone &gt; Stone Wall (mid-game, fireproof)">石头 &gt; 石墙（中期防火）</li>
         <li data-en="Iron Nails + Wood &gt; Reinforced Wood (late game)">铁钉+木材 &gt; 强化木（后期）</li>
-        <li data-en="Marble &gt; Stone Buildings (post-Mountain)">大理石 &gt; 石材建筑（雪山后）</li>
+        <li data-en="Black Marble &gt; Marble Structures (Mistlands, premium)">黑大理石 &gt; 大理石建筑（迷雾之地，顶级质感）</li>
+        <li data-en="Grausten &gt; Ashlands stone (fireproof, endgame)">熔岩石 &gt; 灰烬石材（防火，终局建材）</li>
       </ul></div>
       <div class="fcard"><h4 data-en="Structural Integrity">承重与结构</h4><p data-en="Don't build castles in the air:">别只搭空中楼阁：</p><ul>
         <li data-en="Each piece has a load value — color shows stability">每块建材有承重值，颜色显示稳固度</li>
@@ -88,6 +91,8 @@
           <option value="iron_reinforced" data-en="Reinforced Wood Wall (Iron Nails)">强化木墙（铁钉）</option>
           <option value="door" data-en="Wood Door">木门</option>
           <option value="window" data-en="Wood Window">木窗</option>
+          <option value="black_marble" data-en="Black Marble Wall">黑大理石墙</option>
+          <option value="grausten_wall" data-en="Grausten Wall">熔岩石墙</option>
         </select>
       </div>
       <div class="calc-row">
@@ -104,6 +109,7 @@
         <li data-en="Moat + stakes (vs raid events)">壕沟+尖木桩（防突袭事件）</li>
         <li data-en="Workbench range prevents mob spawning">工作台范围可防怪刷新</li>
         <li data-en="Elevated base vs Swamp/Plains mobs">高处基地防沼泽/平原怪</li>
+        <li data-en="Shield Generator (Ashlands) — protects base from fire rain">护盾发生器（灰烬之地）—— 防火雨摧毁建筑</li>
       </ul></div>
       <div class="fcard"><h4 data-en="Decoration Tips">装饰技巧</h4><ul>
         <li data-en="Deer/wolf head trophies on walls">鹿头/狼头挂墙做装饰</li>
@@ -133,7 +139,7 @@
       </div>
       <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
       <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
-      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="about.html" data-i18n="foot.aboutus">关于本站</a><a href="about.html" data-i18n="foot.feedback">投稿反馈</a><a href="about.html" data-i18n="foot.changelog">更新日志</a></div>
     </div>
     <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
   </div>
@@ -164,6 +170,8 @@ const buildings={
   iron_reinforced:{name:"强化木墙",nameEn:"Reinforced Wood Wall",mats:{木材:4,铁:2},matsEn:{"Wood":4,"Iron":2}},
   door:{name:"木门",nameEn:"Wood Door",mats:{木材:6},matsEn:{"Wood":6}},
   window:{name:"木窗",nameEn:"Wood Window",mats:{木材:2,玻璃:1},matsEn:{"Wood":2,"Glass":1}},
+  black_marble:{name:"黑大理石墙",nameEn:"Black Marble Wall",mats:{黑大理石:4},matsEn:{"Black Marble":4}},
+  grausten_wall:{name:"熔岩石墙",nameEn:"Grausten Wall",mats:{熔岩石:4},matsEn:{"Grausten":4}},
 };
 function calcBuild(){
   const sel=document.getElementById("buildSelect").value;

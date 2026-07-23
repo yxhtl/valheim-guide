@@ -10,6 +10,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Valheim 农场种植与收益指南","inLanguage":"zh-CN","about":"Valheim 全作物种植表与交互式收益计算器","isPartOf":{"@type":"WebSite","name":"英灵神殿生存指南"}}
 </script>
+  <!-- 百度统计 -->
+  <script async src="https://hm.baidu.com/hm.js?71f28761d7809372b129ffb5598d0451"></script>
 </head>
 <body>
 
@@ -100,6 +102,51 @@
             <td data-en="Needs spinning wheel, high-tier armor material">需纺车纺线，高级防具材料</td>
           </tr>
           <tr>
+            <td><b data-en="Jotun Puffs">巨人泡芙</b></td>
+            <td><span class="biome-tag" style="background:#2d1f3d;color:#c4a0e0" data-en="Mistlands">迷雾之地</span></td>
+            <td data-en="Pick on ground in Mistlands">迷雾之地地面拾取</td>
+            <td data-en="2 Jotun Puffs + 1-2 seeds">2巨人泡芙 + 1-2种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Eitr food / High-tier meals">Eitr食物 / 高级料理</td>
+            <td data-en="Only plantable in Mistlands; Eitr-regenerating food">仅迷雾之地可种；回Eitr食物</td>
+          </tr>
+          <tr>
+            <td><b data-en="Magecaps">法师菇</b></td>
+            <td><span class="biome-tag" style="background:#2d1f3d;color:#c4a0e0" data-en="Mistlands">迷雾之地</span></td>
+            <td data-en="Pick on ground in Mistlands">迷雾之地地面拾取</td>
+            <td data-en="2 Magecaps + 1-2 seeds">2法师菇 + 1-2种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Eitr food / Magic-related recipes">Eitr食物 / 魔法相关食谱</td>
+            <td data-en="Only plantable in Mistlands; pairs with Jotun Puffs">仅迷雾之地可种；与巨人泡芙搭配</td>
+          </tr>
+          <tr>
+            <td><b data-en="Smoke Puffs">烟 puff</b></td>
+            <td><span class="biome-tag" style="background:#3d1f1f;color:#f0a0a0" data-en="Ashlands">灰烬之地</span></td>
+            <td data-en="Pick round growths with yellow spots in Ashlands">灰烬之地拾取（圆形黄色斑点）</td>
+            <td data-en="2 Smoke Puffs + 1-2 seeds">2烟 puff + 1-2种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="High-tier Ashlands food">灰烬之地高级食物</td>
+            <td data-en="Only plantable in Ashlands">仅灰烬之地可种</td>
+          </tr>
+          <tr>
+            <td><b data-en="Fiddlehead">蕨菜</b></td>
+            <td><span class="biome-tag" style="background:#3d1f1f;color:#f0a0a0" data-en="Ashlands">灰烬之地</span></td>
+            <td data-en="Purple flower in Ashlands ruins">灰烬废墟中紫色花朵</td>
+            <td data-en="2 Fiddlehead + 1-2 seeds">2蕨菜 + 1-2种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="High-tier Ashlands food ingredient">灰烬高级食材</td>
+            <td data-en="Only plantable in Ashlands">仅灰烬之地可种</td>
+          </tr>
+          <tr>
+            <td><b data-en="Vineberry">藤莓</b></td>
+            <td><span class="biome-tag" style="background:#3d1f1f;color:#f0a0a0" data-en="Ashlands">灰烬之地</span></td>
+            <td data-en="Harvest from vines on old ruins">废墟藤蔓上采摘</td>
+            <td data-en="2 Vineberries + 1-2 seeds">2藤莓 + 1-2种子</td>
+            <td data-en="~3 days">约3天</td>
+            <td data-en="Food / Plantable on walls">食物 / 可种在墙上</td>
+            <td data-en="Unique wall-plantable crop; only Ashlands">可贴墙种植的独特作物</td>
+          </tr>
+          <tr>
             <td><b data-en="Seed Carrot">种子胡萝卜</b></td>
             <td><span class="biome-tag b-meadow" data-en="Meadows">青草地</span></td>
             <td data-en="Obtained from farm planting">栽培场种植获得</td>
@@ -132,6 +179,11 @@
           <option value="2" data-en="Onion (Mountain)">洋葱（雪山）</option>
           <option value="3" data-en="Barley (Plains)">大麦（平原）</option>
           <option value="4" data-en="Flax (Plains)">亚麻（平原）</option>
+          <option value="5" data-en="Jotun Puffs (Mistlands)">巨人泡芙（迷雾之地）</option>
+          <option value="6" data-en="Magecaps (Mistlands)">法师菇（迷雾之地）</option>
+          <option value="7" data-en="Smoke Puffs (Ashlands)">烟 puff（灰烬之地）</option>
+          <option value="8" data-en="Fiddlehead (Ashlands)">蕨菜（灰烬之地）</option>
+          <option value="9" data-en="Vineberry (Ashlands)">藤莓（灰烬之地）</option>
         </select>
       </div>
       <div class="calc-row">
@@ -167,16 +219,17 @@
       <div class="fcard"><h4 data-en="Taming Animals">驯服动物</h4><ul>
         <li data-en="Boar &gt; Feed Carrot (Meadows)">野猪&gt;喂胡萝卜（青草地）</li>
         <li data-en="Wolf &gt; Feed Raw Meat (Mountain)">狼&gt;喂生肉（雪山）</li>
-        <li data-en="Lox &gt; Feed Seed Carrot">山羊&gt;喂种子胡萝卜</li>
+        <li data-en="Lox &gt; Feed Barley/Flax (Plains)">骆牛&gt;喂大麦/亚麻（平原）</li>
+        <li data-en="Asksvin &gt; Feed Smoke Puffs (Ashlands, rideable!)">熔岩蜥&gt;喂烟 puff（灰烬之地，可骑乘！）</li>
         <li data-en="Tamed animals can breed (need 2)">驯服后可繁殖（需2只）</li>
         <li data-en="Produces hide/meat etc.">产出皮/肉等材料</li>
       </ul></div>
       <div class="fcard"><h4 data-en="Late-Game Automation">后期自动化</h4><ul>
         <li data-en="Windmill: Barley &gt; Barley Flour">风车：大麦&gt;大麦粉</li>
         <li data-en="Spinning Wheel: Flax &gt; Linen Thread">纺车：亚麻&gt;亚麻线</li>
+        <li data-en="Eitr Refinery: Sap + Soft Tissue &gt; Refined Eitr (Mistlands)">Eitr精炼器：树汁+软组织&gt;精炼Eitr（迷雾之地）</li>
         <li data-en="Cauldron: Craft high-tier food">大锅：合成高级食物</li>
         <li data-en="Fermenter: Brew mead">发酵桶：制作蜜酒</li>
-        <li data-en="Build in workshop area for management">建在工坊区集中管理</li>
       </ul></div>
     </div>
   </div>
@@ -192,7 +245,7 @@
       </div>
       <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="resources.html" data-en="Resources">资源采集</a><a href="building.html" data-en="Building">建造指南</a></div>
       <div><h4 data-i18n="foot.combat">战斗与农场</h4><a href="dungeons.html" data-en="Dungeons">地牢战斗</a><a href="farming.html" data-en="Farming">农场种植</a><a href="explore.html" data-en="Biomes">生物群落</a><a href="items.html" data-en="Items">物品图鉴</a></div>
-      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="about.html" data-i18n="foot.aboutus">关于本站</a><a href="about.html" data-i18n="foot.feedback">投稿反馈</a><a href="about.html" data-i18n="foot.changelog">更新日志</a></div>
     </div>
     <div class="foot-bottom" data-i18n="foot.copy">© 2026 英灵神殿生存指南 · Valheim 中文攻略站 · 仅供学习交流</div>
   </div>
@@ -218,6 +271,11 @@ const crops=[
   {name:"洋葱",nameEn:"Onion",days:3,yield:2,seedCost:1,use:"食用/洋葱汤",useEn:"Eat / Onion Soup"},
   {name:"大麦",nameEn:"Barley",days:5,yield:2,seedCost:1,use:"磨粉&gt;黑面包",useEn:"Grind &gt; Black Bread"},
   {name:"亚麻",nameEn:"Flax",days:5,yield:2,seedCost:1,use:"纺线&gt;防具",useEn:"Spin &gt; Armor"},
+  {name:"巨人泡芙",nameEn:"Jotun Puffs",days:3,yield:2,seedCost:1,use:"Eitr食物",useEn:"Eitr food"},
+  {name:"法师菇",nameEn:"Magecaps",days:3,yield:2,seedCost:1,use:"魔法食谱",useEn:"Magic recipes"},
+  {name:"烟 puff",nameEn:"Smoke Puffs",days:3,yield:2,seedCost:1,use:"高级食物",useEn:"High-tier food"},
+  {name:"蕨菜",nameEn:"Fiddlehead",days:3,yield:2,seedCost:1,use:"高级食材",useEn:"High-tier ingredient"},
+  {name:"藤莓",nameEn:"Vineberry",days:3,yield:2,seedCost:1,use:"食物/墙植",useEn:"Food / Wall plant"},
 ];
 function calcFarm(){
   const ci=parseInt(document.getElementById("farmCrop").value);

@@ -51,16 +51,16 @@
       tags: "建造 建材 计算器 承重 分区 工坊 木墙 石墙 圆木墙 篝火 壁炉", tagsEn: "building material calculator structural zoning workshop wood-wall stone-wall log-wall campfire hearth" },
     { page: "地牢战斗", pageEn: "Dungeons", url: "dungeons.html",
       title: "Boss战与敌人图鉴", titleEn: "Boss Fights & Enemy Codex",
-      tags: "Boss Eikthyr The Elder Bonemass Moder Yagluth 地牢 埋葬室 巨魔洞穴 沉没地穴 敌人 掉落", tagsEn: "boss Eikthyr Elder Bonemass Moder Yagluth dungeon burial-chamber troll-cave sunken-crypt enemy drops" },
+      tags: "Boss Eikthyr Elder Bonemass Moder Yagluth Queen Fader 女王蜂 翡翠焰灵 地牢 埋葬室 巨魔洞穴 沉没地穴 虫巢地牢 焦骸堡垒 敌人 掉落", tagsEn: "boss Eikthyr Elder Bonemass Moder Yagluth Queen Fader dungeon burial-chamber troll-cave sunken-crypt infested-mine charred-fortress enemy drops" },
     { page: "农场种植", pageEn: "Farming", url: "farming.html",
       title: "作物种植与收益指南", titleEn: "Crop Planting & Profit Guide",
       tags: "农场 种植 胡萝卜 芜菁 洋葱 大麦 亚麻 计算器 驯服 风车 纺车", tagsEn: "farm plant carrot turnip onion barley flax calculator tame windmill spinning-wheel" },
     { page: "生物群落", pageEn: "Biomes", url: "explore.html",
       title: "六大生物群落探索指南", titleEn: "6 Biome Exploration Guide",
-      tags: "生物群落 青草地 黑森林 沼泽 雪山 平原 海洋 探索 航海 解锁", tagsEn: "biome meadows black-forest swamp mountain plains ocean explore sailing unlock" },
+      tags: "生物群落 青草地 黑森林 沼泽 雪山 平原 海洋 迷雾之地 灰烬之地 探索 航海 解锁", tagsEn: "biome meadows black-forest swamp mountain plains ocean mistlands ashlands explore sailing unlock" },
     { page: "物品图鉴", pageEn: "Items", url: "items.html",
       title: "全物品图鉴", titleEn: "Item Codex",
-      tags: "物品 图鉴 材料 食物 工具 武器 防具 蜜酒 木材 铜矿 铁矿 银矿 黑金属 龙肉派 香肠 蜂蜜", tagsEn: "item codex material food tool weapon armor mead wood copper iron silver blackmetal dragon-pie sausage honey" },
+      tags: "物品 图鉴 材料 食物 工具 武器 防具 蜜酒 木材 铜矿 铁矿 银矿 黑金属 焰金 甲壳 世界树木 羽毛披风 迷雾行者 法杖 龙船", tagsEn: "item codex material food tool weapon armor mead wood copper iron silver blackmetal flametal carapace yggdrasil feather-cape mistwalker staff drakkar" },
     /* extra searchable anchors */
     { page: "地牢战斗", pageEn: "Dungeons", url: "dungeons.html",
       title: "Eikthyr（赤鹿）", titleEn: "Eikthyr (Stag)",
@@ -76,7 +76,10 @@
       tags: "Boss4 Moder 冰龙 龙蛋 龙水晶 雪山 抗寒", tagsEn: "boss4 Moder ice-dragon dragon-egg dragon-tear mountain frost-resist" },
     { page: "地牢战斗", pageEn: "Dungeons", url: "dungeons.html",
       title: "Yagluth（亚格鲁斯）", titleEn: "Yagluth (Ancient One)",
-      tags: "Boss5 Yagluth 陨石 激光 平原 丑地精图腾", tagsEn: "boss5 Yagluth meteor laser plains fuling-totem" }
+      tags: "Boss5 Yagluth 陨石 激光 平原 丑地精图腾", tagsEn: "boss5 Yagluth meteor laser plains fuling-totem" },
+    { page: "关于", pageEn: "About", url: "about.html",
+      title: "关于本站", titleEn: "About This Site",
+      tags: "关于 反馈 更新日志 联系 版权", tagsEn: "about feedback changelog contact copyright" }
   ];
 
   var lang = localStorage.getItem("vh-lang") || "zh";

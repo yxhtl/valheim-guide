@@ -228,7 +228,7 @@ header.nav{
 html[lang="en"] .res-emoji{width:auto;min-width:46px;height:auto;min-height:46px;font-size:12.5px;padding:6px 10px;white-space:normal}
 .res-card h4{font-size:16px;color:var(--heading)}
 .res-card .rarity{font-size:11px;font-weight:700;letter-spacing:.05em}
-.tier-1{color:#3a9d3a}.tier-2{color:var(--bronze)}.tier-3{color:var(--frost)}.tier-4{color:var(--blood)}
+.tier-1{color:#3a9d3a}.tier-2{color:var(--bronze)}.tier-3{color:var(--frost)}.tier-4{color:var(--blood)}.tier-5{color:#8b5cf6}
 .res-card p{font-size:13.5px;color:var(--ink-soft)}
 .tagline{display:inline-block;font-size:12px;background:#eef5ef;color:var(--pine-2);padding:3px 10px;border-radius:999px;margin-top:8px}
 
