@@ -3,17 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://valheim.yxhtl.com/about.html">
 <title>关于本站 | 英灵神殿生存指南</title>
 <meta name="description" content="关于英灵神殿生存指南——Valheim中文玩家攻略站，内容来源、更新日志与联系方式。">
 <link rel="stylesheet" href="css/style.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEQNNBPZZZ"></script>
   <script>
+  if (location.hostname === "valheim.yxhtl.com" || location.hostname === "valheim-guide-six.vercel.app") {
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    window.gtag = function(){ window.dataLayer.push(arguments); };
     gtag('js', new Date());
     gtag('config', 'G-NEQNNBPZZZ');
-  </script>
+    var analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-NEQNNBPZZZ';
+    document.head.appendChild(analyticsScript);
+  }
+</script>
   <!-- 百度统计 -->
   <script async src="https://hm.baidu.com/hm.js?71f28761d7809372b129ffb5598d0451"></script>
 </head>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://valheim.yxhtl.com/">
 <title>英灵神殿生存指南 | Valheim 中文攻略站</title>
 <meta name="description" content="《英灵神殿》(Valheim) 中文攻略站：新手入门、资源采集、建造指南、地牢战斗、农场种植、生物群落探索与物品图鉴。从青草地到灰烬之地，一站式维京生存攻略。">
 <meta name="keywords" content="Valheim,英灵神殿,攻略,新手指南,资源采集,建造,地牢,Boss,农场,生物群落,迷雾之地,灰烬之地,Mistlands,Ashlands,Queen,Fader">
@@ -11,13 +12,18 @@
 {"@context":"https://schema.org","@type":"WebSite","name":"英灵神殿生存指南","alternateName":"Valheim 中文攻略站","inLanguage":"zh-CN","url":"index.html","about":"《英灵神殿》(Valheim) 中文攻略站：新手入门、资源采集、建造指南、地牢战斗、农场种植、生物群落探索与物品图鉴"}
 </script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEQNNBPZZZ"></script>
   <script>
+  if (location.hostname === "valheim.yxhtl.com" || location.hostname === "valheim-guide-six.vercel.app") {
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    window.gtag = function(){ window.dataLayer.push(arguments); };
     gtag('js', new Date());
     gtag('config', 'G-NEQNNBPZZZ');
-  </script>
+    var analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-NEQNNBPZZZ';
+    document.head.appendChild(analyticsScript);
+  }
+</script>
   <!-- 百度统计 -->
   <script async src="https://hm.baidu.com/hm.js?71f28761d7809372b129ffb5598d0451"></script>
 </head>
