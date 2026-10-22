@@ -162,7 +162,6 @@
     q = (q || "").trim().toLowerCase();
     if (!q) {
       box.innerHTML = '<div class="sr-empty" data-i18n="search.hint">' + t("search.hint") + "</div>";
-      applyLang(lang);
       return;
     }
     var hits = [];
